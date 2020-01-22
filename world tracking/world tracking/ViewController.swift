@@ -49,6 +49,23 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func AddCapsule(_ sender: Any) {
+        let capNode = SCNNode()
+        capNode.geometry = SCNCapsule(capRadius: 0.1, height: 0.3)
+        capNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        capNode.geometry?.firstMaterial?.specular.contents = UIColor.white
+        
+        // randomizes the position between -0.3 and 0.3 for (x,y,z)
+        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        
+        capNode.position = SCNVector3(x,y,z) // set position of node in relation to rootNode in meters (x,y,z)
+        
+        self.sceneView.scene.rootNode.addChildNode(capNode) // places node on to rootNode
+
+    }
+    
     @IBAction func reset(_ sender: Any) {
         self.restartSession()
     }
