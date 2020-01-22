@@ -21,13 +21,27 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j04-0t-XMT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTR-Ha-nXg">
+                                <rect key="frame" x="20" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="lRP-iv-T6L"/>
+                                    <constraint firstAttribute="width" constant="80" id="sdf-Yk-Lxx"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ng-9z-qFG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j04-0t-XMT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="6Qe-IU-u9m"/>
                             <constraint firstItem="j04-0t-XMT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H9s-ay-SN0"/>
                             <constraint firstItem="j04-0t-XMT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JZs-Gn-WtO"/>
+                            <constraint firstItem="hTR-Ha-nXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Plg-vt-w8W"/>
                             <constraint firstItem="j04-0t-XMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iPR-wl-KnJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hTR-Ha-nXg" secondAttribute="bottom" constant="20" id="yg4-cM-Zzm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

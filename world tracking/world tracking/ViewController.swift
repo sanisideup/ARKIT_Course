@@ -29,5 +29,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func Add(_ sender: Any) {
+        let node = SCNNode() // node = position in space. no size, shape, or color
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius:0)
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.red // set whole node color to red
+        node.position = SCNVector3(0,0,-0.3) // set position of node in relation to rootNode in meters (x,y,z)
+        
+        self.sceneView.scene.rootNode.addChildNode(node) // places node on to rootNode
+    }
 }
 
