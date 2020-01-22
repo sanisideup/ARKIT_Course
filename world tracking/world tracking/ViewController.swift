@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
 
     // create red boxes
-    @IBAction func Add(_ sender: Any) {
+    @IBAction func AddBox(_ sender: Any) {
         let node = SCNNode() // node = position in space. no size, shape, or color
         node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius:0.03) // 10 cm^3 cube. to create a circle set width = height = length and divide hieght by 2
         placeNode(nodeName: node, nodeColor: UIColor.red)
@@ -65,6 +65,13 @@ class ViewController: UIViewController {
         let node = SCNNode()
         node.geometry = SCNCone(topRadius: 0, bottomRadius: 0.1, height: 0.1)
         placeNode(nodeName: node, nodeColor: UIColor.green)
+    }
+    
+    
+    @IBAction func AddRing(_ sender: Any) {
+        let node = SCNNode()
+        node.geometry = SCNTorus(ringRadius: 0.08, pipeRadius: 0.02)
+        placeNode(nodeName: node, nodeColor: UIColor.magenta)
     }
     
     @IBAction func reset(_ sender: Any) {
