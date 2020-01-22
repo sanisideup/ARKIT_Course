@@ -21,6 +21,19 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j04-0t-XMT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-k6-O0h">
+                                <rect key="frame" x="20" y="467" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VaD-QG-aW0"/>
+                                    <constraint firstAttribute="height" constant="80" id="zWy-UU-uCr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Add Capsule"/>
+                                <connections>
+                                    <action selector="AddCapsule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ft-ay-n2h"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hTR-Ha-nXg">
                                 <rect key="frame" x="20" y="567" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,17 +59,17 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxD-WA-dZR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-k6-O0h">
-                                <rect key="frame" x="120" y="567" width="80" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YFH-Do-QeR">
+                                <rect key="frame" x="20" y="367" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="VaD-QG-aW0"/>
-                                    <constraint firstAttribute="height" constant="80" id="zWy-UU-uCr"/>
+                                    <constraint firstAttribute="height" constant="80" id="6Cf-b4-zpn"/>
+                                    <constraint firstAttribute="width" constant="80" id="hqT-FM-V88"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Add Capsule"/>
+                                <state key="normal" title="Add Cone"/>
                                 <connections>
-                                    <action selector="AddCapsule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ft-ay-n2h"/>
+                                    <action selector="AddCone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXT-uL-Dth"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,10 +80,12 @@
                             <constraint firstItem="j04-0t-XMT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JZs-Gn-WtO"/>
                             <constraint firstItem="hTR-Ha-nXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Plg-vt-w8W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Qp-Fk-FF9" secondAttribute="bottom" constant="20" id="RJf-sG-EiE"/>
-                            <constraint firstItem="LEW-k6-O0h" firstAttribute="leading" secondItem="hTR-Ha-nXg" secondAttribute="trailing" constant="20" id="bWt-xO-oLy"/>
+                            <constraint firstItem="hTR-Ha-nXg" firstAttribute="top" secondItem="LEW-k6-O0h" secondAttribute="bottom" constant="20" id="Wld-qY-Gmk"/>
+                            <constraint firstItem="LEW-k6-O0h" firstAttribute="top" secondItem="YFH-Do-QeR" secondAttribute="bottom" constant="20" id="Z2d-4l-28M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Qp-Fk-FF9" secondAttribute="trailing" constant="20" id="g0j-ml-OXa"/>
+                            <constraint firstItem="YFH-Do-QeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gM2-Il-GDs"/>
                             <constraint firstItem="j04-0t-XMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iPR-wl-KnJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LEW-k6-O0h" secondAttribute="bottom" constant="20" id="wSG-Qb-HQh"/>
+                            <constraint firstItem="LEW-k6-O0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ksl-8h-8Ag"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hTR-Ha-nXg" secondAttribute="bottom" constant="20" id="yg4-cM-Zzm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

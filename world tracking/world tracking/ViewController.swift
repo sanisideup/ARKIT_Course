@@ -30,40 +30,41 @@ class ViewController: UIViewController {
         // create omnidirectional light source into the view
         self.sceneView.autoenablesDefaultLighting = true
     }
+    
+    // function to place node on a random spot in the view in relation to rootNode
+    func placeNode (nodeName: SCNNode, nodeColor: Any) {
+        nodeName.geometry?.firstMaterial?.diffuse.contents = nodeColor // set whole node color
+        nodeName.geometry?.firstMaterial?.specular.contents = UIColor.white // light reflecting off the surface
+        
+        // randomizes the position between -1 and 1 meter for (x,y,z)
+        let x = randomNumbers(firstNum: -1, secondNum: 1)
+        let y = randomNumbers(firstNum: -1, secondNum: 1)
+        let z = randomNumbers(firstNum: -1, secondNum: 1)
+        
+        nodeName.position = SCNVector3(x,y,z) // set position of node in relation to rootNode in meters (x,y,z)
+        
+        self.sceneView.scene.rootNode.addChildNode(nodeName) // places node on to rootNode
+    }
 
-
+    // create red boxes
     @IBAction func Add(_ sender: Any) {
         let node = SCNNode() // node = position in space. no size, shape, or color
         node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius:0.03) // 10 cm^3 cube. to create a circle set width = height = length and divide hieght by 2
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.red // set whole node color to red
-        node.geometry?.firstMaterial?.specular.contents = UIColor.white // light reflecting off the surface
-        
-        // randomizes the position between -0.3 and 0.3 for (x,y,z)
-        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        
-        node.position = SCNVector3(x,y,z) // set position of node in relation to rootNode in meters (x,y,z)
-        
-        self.sceneView.scene.rootNode.addChildNode(node) // places node on to rootNode
+        placeNode(nodeName: node, nodeColor: UIColor.red)
+    }
+    
+    // create blue capsules
+    @IBAction func AddCapsule(_ sender: Any) {
+        let node = SCNNode()
+        node.geometry = SCNCapsule(capRadius: 0.05, height: 0.2)
+        placeNode(nodeName: node, nodeColor: UIColor.blue)
     }
     
     
-    @IBAction func AddCapsule(_ sender: Any) {
-        let capNode = SCNNode()
-        capNode.geometry = SCNCapsule(capRadius: 0.1, height: 0.3)
-        capNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-        capNode.geometry?.firstMaterial?.specular.contents = UIColor.white
-        
-        // randomizes the position between -0.3 and 0.3 for (x,y,z)
-        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        
-        capNode.position = SCNVector3(x,y,z) // set position of node in relation to rootNode in meters (x,y,z)
-        
-        self.sceneView.scene.rootNode.addChildNode(capNode) // places node on to rootNode
-
+    @IBAction func AddCone(_ sender: Any) {
+        let node = SCNNode()
+        node.geometry = SCNCone(topRadius: 0, bottomRadius: 0.1, height: 0.1)
+        placeNode(nodeName: node, nodeColor: UIColor.green)
     }
     
     @IBAction func reset(_ sender: Any) {
