@@ -49,6 +49,13 @@ class ViewController: UIViewController {
     // create red boxes
     @IBAction func AddBox(_ sender: Any) {
         let node = SCNNode() // node = position in space. no size, shape, or color
+        
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x:0 , y:0))
+        path.addLine(to:CGPoint(x:0, y: 0.2))
+        let shape = SCNShape(path: path, extrusionDepth: 0)
+        node.geometry = shape
+        
         node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius:0.03) // 10 cm^3 cube. to create a circle set width = height = length and divide hieght by 2
         placeNode(nodeName: node, nodeColor: UIColor.red)
     }
@@ -72,6 +79,27 @@ class ViewController: UIViewController {
         let node = SCNNode()
         node.geometry = SCNTorus(ringRadius: 0.08, pipeRadius: 0.02)
         placeNode(nodeName: node, nodeColor: UIColor.magenta)
+    }
+    
+    @IBAction func AddCustomShape(_ sender: Any) {
+        let node = SCNNode() // node = position in space. no size, shape, or color
+        
+        // create path to create a custom shape
+        // can use software to upload svg files to convert to a bezierpath
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x:0, y:0)) // sets start point of path to the node set later
+        path.addLine(to: CGPoint(x:0, y:0.2)) // add line from start point and move 0.2 up
+        path.addLine(to: CGPoint(x:0.2, y:0.3)) // add line from start point and move 0.2 right and 0.3 up
+        path.addLine(to: CGPoint(x:0.4, y:0.2)) // add line from start point and move 0.3 right and 0.2 up
+        path.addLine(to: CGPoint(x:0.4, y:0)) // add line from start point and move 0.3 right
+        let shape = SCNShape(path: path, extrusionDepth: 0.2) // extrudes path by 0.2
+        node.geometry = shape
+        
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        node.geometry?.firstMaterial?.specular.contents = UIColor.white
+        
+        node.position = SCNVector3(0,0,-0.2)
+        self.sceneView.scene.rootNode.addChildNode(node)
     }
     
     @IBAction func reset(_ sender: Any) {
