@@ -33,24 +33,50 @@ class ViewController: UIViewController {
     }
 
     @IBAction func add(_ sender: Any) {
+        
+//        let pyramid = SCNNode(geometry: SCNPyramid(width: 0.1, height: 0.1, length: 0.1))
+//        pyramid.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+//
+//
+//        pyramid.position = SCNVector3(0,0,-0.3)
+//        pyramid.eulerAngles = SCNVector3(Float(90.degreeToRadians),(Float(90.degreeToRadians)),0)
+//        self.sceneView.scene.rootNode.addChildNode(pyramid)
+//
+//        // rotating the parent node will cause other nodes to rotate with it
+//        // since the cylinder is a child of a the pyramid, the cylinder will rotate as well
+        
+//        let cylinder = SCNNode(geometry: SCNCylinder(radius: 0.05, height: 0.1))
+//        cylinder.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+//        cylinder.position = SCNVector3(0,0,0.2)
+//        pyramid.addChildNode(cylinder)
+        
         let node = SCNNode() // node = position in space. no size, shape, or color
-        
-        // create path to create a custom shape
-        // can use software to upload svg files to convert to a bezierpath 
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x:0, y:0)) // sets start point of path to the node set later
-        path.addLine(to: CGPoint(x:0, y:0.2)) // add line from start point and move 0.2 up
-        path.addLine(to: CGPoint(x:0.2, y:0.3)) // add line from start point and move 0.2 right and 0.3 up
-        path.addLine(to: CGPoint(x:0.4, y:0.2)) // add line from start point and move 0.3 right and 0.2 up
-        path.addLine(to: CGPoint(x:0.4, y:0)) // add line from start point and move 0.3 right
-        let shape = SCNShape(path: path, extrusionDepth: 0.2) // extrudes path by 0.2
-        node.geometry = shape
-        
+        node.geometry = SCNPyramid(width: 0.1, height: 0.1, length: 0.1)
         node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         node.geometry?.firstMaterial?.specular.contents = UIColor.white
+
+        let x = randomNumbers(firstNum: -1, secondNum: 1)
+        let y = randomNumbers(firstNum: -1, secondNum: 1)
+        let z = randomNumbers(firstNum: -1, secondNum: 1)
+        node.position = SCNVector3(x,y,z) // set position of node in relation to rootNode in meters (x,y,z)
         
-        node.position = SCNVector3(0,0,-0.2)
+        let xR = randomNumbers(firstNum: 0, secondNum: 360)
+        let yR = randomNumbers(firstNum: 360, secondNum: 360)
+        let zR = randomNumbers(firstNum: 360, secondNum: 360)
+        node.eulerAngles = SCNVector3(xR,yR,zR)
         self.sceneView.scene.rootNode.addChildNode(node)
+
+        let box = SCNNode()
+        box.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        box.geometry?.firstMaterial?.diffuse.contents = UIColor.yellow
+        box.geometry?.firstMaterial?.specular.contents = UIColor.blue
+        box.position = SCNVector3(0,-0.05,0)
+        node.addChildNode(box) // position rlative to the pyramid
+
+        let door = SCNNode(geometry:SCNPlane(width: 0.03, height: 0.06))
+        door.geometry?.firstMaterial?.diffuse.contents = UIColor.brown
+        door.position = SCNVector3(0,-0.02,0.052)
+        box.addChildNode(door)
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -65,5 +91,13 @@ class ViewController: UIViewController {
         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors]) // forget old starting position and orientation and make a new one based on where you are
     }
     
+    // gives you a random number in the range you give it
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
 }
 
+extension Int {
+    var degreeToRadians: Double { return Double(self) * .pi/180 }
+}
