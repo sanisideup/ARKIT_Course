@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         let node = SCNNode() // node = position in space. no size, shape, or color
         node.geometry = SCNPyramid(width: 0.1, height: 0.1, length: 0.1)
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.random
         node.geometry?.firstMaterial?.specular.contents = UIColor.white
 
         let x = randomNumbers(firstNum: -1, secondNum: 1)
@@ -68,13 +68,13 @@ class ViewController: UIViewController {
 
         let box = SCNNode()
         box.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
-        box.geometry?.firstMaterial?.diffuse.contents = UIColor.yellow
-        box.geometry?.firstMaterial?.specular.contents = UIColor.blue
+        box.geometry?.firstMaterial?.diffuse.contents = UIColor.random
+        box.geometry?.firstMaterial?.specular.contents = UIColor.white
         box.position = SCNVector3(0,-0.05,0)
         node.addChildNode(box) // position rlative to the pyramid
 
         let door = SCNNode(geometry:SCNPlane(width: 0.03, height: 0.06))
-        door.geometry?.firstMaterial?.diffuse.contents = UIColor.brown
+        door.geometry?.firstMaterial?.diffuse.contents = UIColor.random
         door.position = SCNVector3(0,-0.02,0.052)
         box.addChildNode(door)
     }
@@ -100,4 +100,15 @@ class ViewController: UIViewController {
 
 extension Int {
     var degreeToRadians: Double { return Double(self) * .pi/180 }
+    
+
+}
+
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue: .random(in: 0...1),
+                       alpha: 1.0)
+    }
 }
