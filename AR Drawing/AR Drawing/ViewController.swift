@@ -11,10 +11,10 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
+    @IBOutlet weak var draw: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
+    
     let configuration = ARWorldTrackingConfiguration()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +29,44 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // gets triggered as long as something is getting rendered
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
-        print("rendering")
         guard let pointOfView = sceneView.pointOfView else {return}
         let transform = pointOfView.transform
         
         // gets the orientation vector of pointOfView (col3 row1, col3 row2, col3 row3)
-        // note that the orientation is based on the screen, so since we want to place a node behind the camera, we make the vector negative 
+        // note that the orientation is based on the screen, so since we want to place a node behind the camera, we make the vector negative
         let orientation = SCNVector3(-transform.m31,-transform.m32,-transform.m33)
         
         // gets location vector of pointOfView (col4 row1, rol4 row2, col4 row3)
         let location = SCNVector3(transform.m41,transform.m42,transform.m43)
         
         let frontOfCamera = orientation + location // combines the two vectors to get a node infront of the camera
-        print(orientation.x, orientation.y, orientation.z)
+        
+        // diconnect the code from the background thread and put into main thread
+        DispatchQueue.main.async{
+            
+            // if draw is being pressed
+            if self.draw.isHighlighted {
+                let sphereNode = SCNNode(geometry: SCNSphere(radius:0.02))
+                sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+                sphereNode.position = frontOfCamera
+                self.sceneView.scene.rootNode.addChildNode(sphereNode)
+            } else {
+                // create a pointer when the draw button is being pressed to let the user know where they will be drawing
+                let pointer = SCNNode(geometry: SCNSphere(radius:0.01))
+                pointer.name = "pointer"
+                pointer.geometry?.firstMaterial?.diffuse.contents = UIColor.darkGray
+                pointer.position = frontOfCamera
+                
+                self.sceneView.scene.rootNode.enumerateChildNodes({ (node, _) in
+                    if node.name == "pointer" {
+                        node.removeFromParentNode()
+                    }
+                })
+                
+                self.sceneView.scene.rootNode.addChildNode(pointer)
+            }
+        }
+        
     }
 
 }
