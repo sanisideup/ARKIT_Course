@@ -23,24 +23,56 @@
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-Uc-QR8">
                                 <rect key="frame" x="155" y="590" width="65" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.32687896490000001" green="0.62360471490000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="584-so-qeM"/>
                                     <constraint firstAttribute="width" constant="65" id="kct-yp-nFA"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Draw"/>
+                                <connections>
+                                    <action selector="drawPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVX-ej-2LG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBC-eN-ex9">
+                                <rect key="frame" x="290" y="40" width="65" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VVE-eb-wZs"/>
+                                    <constraint firstAttribute="width" constant="65" id="xAw-ju-1mf"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aL2-CH-qGD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDq-Xv-ctb">
+                                <rect key="frame" x="290" y="105" width="65" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="8BT-j2-FyA"/>
+                                    <constraint firstAttribute="height" constant="45" id="XXB-bH-SLr"/>
+                                </constraints>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJe-Ut-LMl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3hc-ft-Zf8"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="4mX-TV-rDS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wDq-Xv-ctb" secondAttribute="trailing" constant="20" id="7H9-ts-kdK"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8BP-oc-U0R"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AT2-pM-7al"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="Fig-ev-nDE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PdK-Uc-QR8" secondAttribute="bottom" constant="32" id="KyU-T4-IaT"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VYF-Ea-6X5"/>
+                            <constraint firstItem="wDq-Xv-ctb" firstAttribute="top" secondItem="OBC-eN-ex9" secondAttribute="bottom" constant="20" id="cUf-Pf-GFh"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j8P-nM-5Rw"/>
+                            <constraint firstItem="OBC-eN-ex9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="j8w-lW-Z7z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBC-eN-ex9" secondAttribute="trailing" constant="20" id="jsM-eG-LWJ"/>
                             <constraint firstItem="pg5-3D-CUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qch-2f-wAa"/>
                             <constraint firstItem="PdK-Uc-QR8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ren-Wh-vFo"/>
                         </constraints>

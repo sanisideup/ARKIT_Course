@@ -27,6 +27,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    var i: Int = 0
+    
     // gets triggered as long as something is getting rendered
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
         guard let pointOfView = sceneView.pointOfView else {return}
@@ -49,10 +51,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 // draw is being pressed, so create a sphere to "draw" lines
                 let sphereNode = SCNNode(geometry: SCNSphere(radius:0.02))
+                sphereNode.name = "drawing" + String(self.i)
                 sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
                 sphereNode.position = frontOfCamera
                 self.sceneView.scene.rootNode.addChildNode(sphereNode)
-                
+
                 
             } else {
                 
@@ -77,7 +80,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
         
     }
-
+    
+    
+    @IBAction func drawPressed(_ sender: Any) {
+        self.i += 1
+        print(String(self.i))
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _ ) in
+            node.removeFromParentNode()
+        }
+    }
+    
+    @IBAction func undo(_ sender: Any) {
+        print("undo" + String(self.i))
+        self.i -= 1
+        self.sceneView.scene.rootNode.enumerateChildNodes({ (node, _) in
+            
+            // delete most recent drawing press
+            if node.name == "drawing" + String(self.i) {
+                node.removeFromParentNode()
+            }
+        })
+    }
+    
 }
 
 // function to combine 2 vectors together
