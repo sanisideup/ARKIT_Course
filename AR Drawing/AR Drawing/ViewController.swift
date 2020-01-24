@@ -46,21 +46,30 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             // if draw is being pressed
             if self.draw.isHighlighted {
+                
+                // draw is being pressed, so create a sphere to "draw" lines
                 let sphereNode = SCNNode(geometry: SCNSphere(radius:0.02))
                 sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
                 sphereNode.position = frontOfCamera
                 self.sceneView.scene.rootNode.addChildNode(sphereNode)
+                
+                
             } else {
-                // create a pointer when the draw button is being pressed to let the user know where they will be drawing
+                
+                // create a pointer when the draw button is NOT being pressed to let the user know where they will be drawing
                 let pointer = SCNNode(geometry: SCNSphere(radius:0.01))
-                pointer.name = "pointer"
+                pointer.name = "pointer" // set name of this node to pointer
                 pointer.geometry?.firstMaterial?.diffuse.contents = UIColor.darkGray
                 pointer.position = frontOfCamera
                 
+                // the pointer is created every time the screen is rendered, so you need to delete it every time as well so that a trail of pointers are not left behind
                 self.sceneView.scene.rootNode.enumerateChildNodes({ (node, _) in
+                    
+                    // delete node that has the name pointer
                     if node.name == "pointer" {
                         node.removeFromParentNode()
                     }
+                    
                 })
                 
                 self.sceneView.scene.rootNode.addChildNode(pointer)
@@ -71,7 +80,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
 }
 
-
+// function to combine 2 vectors together
 func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {
     return SCNVector3Make(left.x + right.x, left.y + right.y, left.z + right.z)
 }
