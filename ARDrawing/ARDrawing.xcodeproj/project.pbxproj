@@ -14,6 +14,8 @@
 		C06F482323DAA04500BC6937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06F482123DAA04500BC6937 /* LaunchScreen.storyboard */; };
 		C06F482E23DAA04500BC6937 /* AR_DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06F482D23DAA04500BC6937 /* AR_DrawingTests.swift */; };
 		C06F483923DAA04500BC6937 /* AR_DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06F483823DAA04500BC6937 /* AR_DrawingUITests.swift */; };
+		C0B06AAB23DAB9EF00368A4B /* ColorSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B06AA923DAB9EF00368A4B /* ColorSequence.swift */; };
+		C0B06AAE23DABBD500368A4B /* ColorIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B06AAD23DABBD500368A4B /* ColorIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C06F481523DAA04400BC6937 /* AR Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Drawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06F481523DAA04400BC6937 /* ARDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06F481823DAA04400BC6937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06F481A23DAA04400BC6937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C06F481D23DAA04400BC6937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06F481F23DAA04500BC6937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06F482223DAA04500BC6937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C06F482423DAA04500BC6937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C06F482923DAA04500BC6937 /* AR DrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR DrawingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06F482923DAA04500BC6937 /* ARDrawingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARDrawingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06F482D23DAA04500BC6937 /* AR_DrawingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_DrawingTests.swift; sourceTree = "<group>"; };
 		C06F482F23DAA04500BC6937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C06F483423DAA04500BC6937 /* AR DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR DrawingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06F483423DAA04500BC6937 /* ARDrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARDrawingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06F483823DAA04500BC6937 /* AR_DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_DrawingUITests.swift; sourceTree = "<group>"; };
 		C06F483A23DAA04500BC6937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B06AA923DAB9EF00368A4B /* ColorSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSequence.swift; path = "../../../../Downloads/Sequences-master/Source/Colors/ColorSequence.swift"; sourceTree = "<group>"; };
+		C0B06AAD23DABBD500368A4B /* ColorIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorIterator.swift; path = "../../../../Downloads/Sequences-master/Source/Colors/ColorIterator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,9 @@
 		C06F480C23DAA04400BC6937 = {
 			isa = PBXGroup;
 			children = (
-				C06F481723DAA04400BC6937 /* AR Drawing */,
-				C06F482C23DAA04500BC6937 /* AR DrawingTests */,
-				C06F483723DAA04500BC6937 /* AR DrawingUITests */,
+				C06F481723DAA04400BC6937 /* ARDrawing */,
+				C06F482C23DAA04500BC6937 /* ARDrawingTests */,
+				C06F483723DAA04500BC6937 /* ARDrawingUITests */,
 				C06F481623DAA04400BC6937 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,16 +91,18 @@
 		C06F481623DAA04400BC6937 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C06F481523DAA04400BC6937 /* AR Drawing.app */,
-				C06F482923DAA04500BC6937 /* AR DrawingTests.xctest */,
-				C06F483423DAA04500BC6937 /* AR DrawingUITests.xctest */,
+				C06F481523DAA04400BC6937 /* ARDrawing.app */,
+				C06F482923DAA04500BC6937 /* ARDrawingTests.xctest */,
+				C06F483423DAA04500BC6937 /* ARDrawingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C06F481723DAA04400BC6937 /* AR Drawing */ = {
+		C06F481723DAA04400BC6937 /* ARDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				C0B06AAD23DABBD500368A4B /* ColorIterator.swift */,
+				C0B06AA923DAB9EF00368A4B /* ColorSequence.swift */,
 				C06F481823DAA04400BC6937 /* AppDelegate.swift */,
 				C06F481A23DAA04400BC6937 /* ViewController.swift */,
 				C06F481C23DAA04400BC6937 /* Main.storyboard */,
@@ -104,33 +110,33 @@
 				C06F482123DAA04500BC6937 /* LaunchScreen.storyboard */,
 				C06F482423DAA04500BC6937 /* Info.plist */,
 			);
-			path = "AR Drawing";
+			path = ARDrawing;
 			sourceTree = "<group>";
 		};
-		C06F482C23DAA04500BC6937 /* AR DrawingTests */ = {
+		C06F482C23DAA04500BC6937 /* ARDrawingTests */ = {
 			isa = PBXGroup;
 			children = (
 				C06F482D23DAA04500BC6937 /* AR_DrawingTests.swift */,
 				C06F482F23DAA04500BC6937 /* Info.plist */,
 			);
-			path = "AR DrawingTests";
+			path = ARDrawingTests;
 			sourceTree = "<group>";
 		};
-		C06F483723DAA04500BC6937 /* AR DrawingUITests */ = {
+		C06F483723DAA04500BC6937 /* ARDrawingUITests */ = {
 			isa = PBXGroup;
 			children = (
 				C06F483823DAA04500BC6937 /* AR_DrawingUITests.swift */,
 				C06F483A23DAA04500BC6937 /* Info.plist */,
 			);
-			path = "AR DrawingUITests";
+			path = ARDrawingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C06F481423DAA04400BC6937 /* AR Drawing */ = {
+		C06F481423DAA04400BC6937 /* ARDrawing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C06F483D23DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR Drawing" */;
+			buildConfigurationList = C06F483D23DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawing" */;
 			buildPhases = (
 				C06F481123DAA04400BC6937 /* Sources */,
 				C06F481223DAA04400BC6937 /* Frameworks */,
@@ -140,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = "AR Drawing";
+			name = ARDrawing;
 			productName = "AR Drawing";
-			productReference = C06F481523DAA04400BC6937 /* AR Drawing.app */;
+			productReference = C06F481523DAA04400BC6937 /* ARDrawing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C06F482823DAA04500BC6937 /* AR DrawingTests */ = {
+		C06F482823DAA04500BC6937 /* ARDrawingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C06F484023DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR DrawingTests" */;
+			buildConfigurationList = C06F484023DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawingTests" */;
 			buildPhases = (
 				C06F482523DAA04500BC6937 /* Sources */,
 				C06F482623DAA04500BC6937 /* Frameworks */,
@@ -158,14 +164,14 @@
 			dependencies = (
 				C06F482B23DAA04500BC6937 /* PBXTargetDependency */,
 			);
-			name = "AR DrawingTests";
+			name = ARDrawingTests;
 			productName = "AR DrawingTests";
-			productReference = C06F482923DAA04500BC6937 /* AR DrawingTests.xctest */;
+			productReference = C06F482923DAA04500BC6937 /* ARDrawingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C06F483323DAA04500BC6937 /* AR DrawingUITests */ = {
+		C06F483323DAA04500BC6937 /* ARDrawingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C06F484323DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR DrawingUITests" */;
+			buildConfigurationList = C06F484323DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawingUITests" */;
 			buildPhases = (
 				C06F483023DAA04500BC6937 /* Sources */,
 				C06F483123DAA04500BC6937 /* Frameworks */,
@@ -176,9 +182,9 @@
 			dependencies = (
 				C06F483623DAA04500BC6937 /* PBXTargetDependency */,
 			);
-			name = "AR DrawingUITests";
+			name = ARDrawingUITests;
 			productName = "AR DrawingUITests";
-			productReference = C06F483423DAA04500BC6937 /* AR DrawingUITests.xctest */;
+			productReference = C06F483423DAA04500BC6937 /* ARDrawingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C06F481023DAA04400BC6937 /* Build configuration list for PBXProject "AR Drawing" */;
+			buildConfigurationList = C06F481023DAA04400BC6937 /* Build configuration list for PBXProject "ARDrawing" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C06F481423DAA04400BC6937 /* AR Drawing */,
-				C06F482823DAA04500BC6937 /* AR DrawingTests */,
-				C06F483323DAA04500BC6937 /* AR DrawingUITests */,
+				C06F481423DAA04400BC6937 /* ARDrawing */,
+				C06F482823DAA04500BC6937 /* ARDrawingTests */,
+				C06F483323DAA04500BC6937 /* ARDrawingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B06AAB23DAB9EF00368A4B /* ColorSequence.swift in Sources */,
 				C06F481B23DAA04400BC6937 /* ViewController.swift in Sources */,
 				C06F481923DAA04400BC6937 /* AppDelegate.swift in Sources */,
+				C0B06AAE23DABBD500368A4B /* ColorIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +290,12 @@
 /* Begin PBXTargetDependency section */
 		C06F482B23DAA04500BC6937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C06F481423DAA04400BC6937 /* AR Drawing */;
+			target = C06F481423DAA04400BC6937 /* ARDrawing */;
 			targetProxy = C06F482A23DAA04500BC6937 /* PBXContainerItemProxy */;
 		};
 		C06F483623DAA04500BC6937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C06F481423DAA04400BC6937 /* AR Drawing */;
+			target = C06F481423DAA04400BC6937 /* ARDrawing */;
 			targetProxy = C06F483523DAA04500BC6937 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5536WL3D7;
-				INFOPLIST_FILE = "AR Drawing/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARDrawing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5536WL3D7;
-				INFOPLIST_FILE = "AR Drawing/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARDrawing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Drawing.app/AR Drawing";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDrawing.app/ARDrawing";
 			};
 			name = Debug;
 		};
@@ -500,7 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Drawing.app/AR Drawing";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDrawing.app/ARDrawing";
 			};
 			name = Release;
 		};
@@ -545,7 +553,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C06F481023DAA04400BC6937 /* Build configuration list for PBXProject "AR Drawing" */ = {
+		C06F481023DAA04400BC6937 /* Build configuration list for PBXProject "ARDrawing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C06F483B23DAA04500BC6937 /* Debug */,
@@ -554,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C06F483D23DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR Drawing" */ = {
+		C06F483D23DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C06F483E23DAA04500BC6937 /* Debug */,
@@ -563,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C06F484023DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR DrawingTests" */ = {
+		C06F484023DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C06F484123DAA04500BC6937 /* Debug */,
@@ -572,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C06F484323DAA04500BC6937 /* Build configuration list for PBXNativeTarget "AR DrawingUITests" */ = {
+		C06F484323DAA04500BC6937 /* Build configuration list for PBXNativeTarget "ARDrawingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C06F484423DAA04500BC6937 /* Debug */,

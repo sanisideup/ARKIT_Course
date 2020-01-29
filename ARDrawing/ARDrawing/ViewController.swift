@@ -52,7 +52,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 // draw is being pressed, so create a sphere to "draw" lines
                 let sphereNode = SCNNode(geometry: SCNSphere(radius:0.02))
                 sphereNode.name = "drawing" + String(self.i)
-                sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+                sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.random
                 sphereNode.position = frontOfCamera
                 self.sceneView.scene.rootNode.addChildNode(sphereNode)
 
@@ -110,4 +110,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 // function to combine 2 vectors together
 func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {
     return SCNVector3Make(left.x + right.x, left.y + right.y, left.z + right.z)
+}
+
+//randomizes the color 
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(red: .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue: .random(in: 0...1),
+                       alpha: 1.0)
+    }
 }
