@@ -21,21 +21,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
-    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
-        self.resetButton.isHidden = true
-
+        
         // trigger to identify that the sceneView was tapped
         // when tapGestureRecognizer is identified it runs the function handleTap
         let tapGestureReocgnizer = UITapGestureRecognizer(target:self, action: #selector(handleTap))
         self.sceneView.addGestureRecognizer(tapGestureReocgnizer)
-        
+ 
     }
 
     @IBAction func play(_ sender: Any) {
@@ -43,7 +41,7 @@ class ViewController: UIViewController {
         self.resetScore()
         self.startGame()
         self.play.isEnabled = false
-        play.isHidden = true
+        
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -52,7 +50,6 @@ class ViewController: UIViewController {
         self.countStart = 3
         self.timerLabel.text = String(countDown)
         self.play.isEnabled = true
-        play.isHidden = false
     }
     
     func addNode() {
@@ -117,7 +114,6 @@ class ViewController: UIViewController {
                 self.countDown = 0
                 self.timerLabel.text = String(self.countDown)
                 self.killJelly()
-                self.play.isHidden = false
                 return .stop
             }
             return .continue

@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjj-Cm-I49">
-                                <rect key="frame" x="20" y="602" width="65" height="45"/>
+                                <rect key="frame" x="20" y="592" width="85" height="55"/>
                                 <color key="backgroundColor" red="0.32687896490000001" green="0.62360471490000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="1IA-1E-iEe"/>
-                                    <constraint firstAttribute="width" constant="65" id="QXd-n1-w3f"/>
+                                    <constraint firstAttribute="height" constant="55" id="1IA-1E-iEe"/>
+                                    <constraint firstAttribute="width" constant="85" id="QXd-n1-w3f"/>
                                 </constraints>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,11 +33,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66G-bd-WHz">
-                                <rect key="frame" x="290" y="602" width="65" height="45"/>
+                                <rect key="frame" x="270" y="592" width="85" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="7Mb-Pt-vld"/>
-                                    <constraint firstAttribute="height" constant="45" id="uN7-oG-Saj"/>
+                                    <constraint firstAttribute="width" constant="85" id="7Mb-Pt-vld"/>
+                                    <constraint firstAttribute="height" constant="55" id="uN7-oG-Saj"/>
                                 </constraints>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
