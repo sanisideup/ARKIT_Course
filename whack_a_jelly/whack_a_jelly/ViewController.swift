@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     var timer = Each(1).seconds
     var countDown = 10
     
+    var score = 0
+    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
@@ -40,6 +43,7 @@ class ViewController: UIViewController {
     
     @IBAction func reset(_ sender: Any) {
         self.killJelly()
+        self.resetScore()
         self.restoreTimer()
         self.play.isEnabled = true
     }
@@ -63,6 +67,7 @@ class ViewController: UIViewController {
             print("didn't touch anything")
         } else {
             self.restoreTimer()
+            self.incScore()
             let results = hitTest.first!.node
             
             // check if an animation is currently running to prevent animation to occur while one is occuring
@@ -120,6 +125,16 @@ class ViewController: UIViewController {
             node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
                                                SCNAction.removeFromParentNode()]))
         }
+    }
+    
+    func incScore() {
+        score += 1
+        self.scoreLabel.text = String(score)
+    }
+    
+    func resetScore() {
+        score = 0
+        self.scoreLabel.text = String(score)
     }
 }
 
