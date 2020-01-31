@@ -106,7 +106,6 @@ class ViewController: UIViewController {
             self.countDown -= 1
             self.timerLabel.text = String(self.countDown)
             if self.countDown == 0 {
-                self.timerLabel.text = "You Lose"
                 self.killJelly()
                 return .stop
             }
