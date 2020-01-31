@@ -40,13 +40,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func play(_ sender: Any) {
-        self.restartARSession()
         self.resetScore()
         self.startGame()
         self.play.isHidden = true
     }
     
     @IBAction func reset(_ sender: Any) {
+        self.restartARSession()
         self.killJelly()
         self.countDown = 0
         self.countStart = 4
@@ -154,8 +154,8 @@ class ViewController: UIViewController {
     
     func startGame() {
         let guide = SCNNode()
-        guide.geometry = SCNText(string: " Jelly\n\nKiller", extrusionDepth: 3)
-        guide.position = SCNVector3(-0.5,-0.3,-3)
+        guide.geometry = SCNText(string: "Whack\n\n     a\n\n  Jelly", extrusionDepth: 3)
+        guide.position = SCNVector3(-0.35,-1,-2.5)
         guide.scale = SCNVector3(0.02,0.02,0.02)
         self.sceneView.scene.rootNode.addChildNode(guide)
         self.fadeNode(node: guide)
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
             if self.countStart <= 3 {
                 let count = SCNNode()
                 count.geometry = SCNText(string: String(self.countStart), extrusionDepth: 3)
-                count.position = SCNVector3(-0.1,-0.3,-1)
+                count.position = SCNVector3(-0.15,-0.4,-1)
                 count.scale = SCNVector3(0.02,0.02,0.02)
                 self.sceneView.scene.rootNode.addChildNode(count)
                 self.fadeNode(node: count)
