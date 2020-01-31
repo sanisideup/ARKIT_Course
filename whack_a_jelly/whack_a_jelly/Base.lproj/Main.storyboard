@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-Li-Fpi">
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
+                            </arscnView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjj-Cm-I49">
                                 <rect key="frame" x="20" y="592" width="85" height="55"/>
                                 <color key="backgroundColor" red="0.32687896490000001" green="0.62360471490000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,20 +33,6 @@
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWD-Xl-SnB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66G-bd-WHz">
-                                <rect key="frame" x="270" y="592" width="85" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="7Mb-Pt-vld"/>
-                                    <constraint firstAttribute="height" constant="55" id="uN7-oG-Saj"/>
-                                </constraints>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUH-Cd-YRg"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUF-hZ-j1j">
@@ -88,9 +77,20 @@
                                     <constraint firstItem="e4R-Mv-fDi" firstAttribute="centerY" secondItem="fUF-hZ-j1j" secondAttribute="centerY" id="zBr-8i-36C"/>
                                 </constraints>
                             </view>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-Li-Fpi">
-                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
-                            </arscnView>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66G-bd-WHz">
+                                <rect key="frame" x="274" y="592" width="85" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="7Mb-Pt-vld"/>
+                                    <constraint firstAttribute="height" constant="55" id="uN7-oG-Saj"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUH-Cd-YRg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -113,8 +113,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="play" destination="bjj-Cm-I49" id="0QY-9R-D2y"/>
-                        <outlet property="resetButton" destination="66G-bd-WHz" id="xmc-HP-h1k"/>
+                        <outlet property="play" destination="bjj-Cm-I49" id="LLy-e7-ruX"/>
+                        <outlet property="resetButton" destination="66G-bd-WHz" id="zmq-4w-yHd"/>
                         <outlet property="sceneView" destination="5ci-Li-Fpi" id="Cpe-M5-TYy"/>
                         <outlet property="scoreLabel" destination="j2g-Em-yeq" id="czB-LZ-jnb"/>
                         <outlet property="timerLabel" destination="e4R-Mv-fDi" id="qnv-Rv-qnS"/>

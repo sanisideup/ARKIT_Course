@@ -15,12 +15,13 @@ class ViewController: UIViewController {
     var timer = Each(1).seconds
     var timerStart = Each(1.2).seconds
     var countDown = 10
-    var countStart = 3
+    var countStart = 4
     var score = 0
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
 
@@ -28,6 +29,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
+        self.play.isHidden = false
+        self.resetButton.isHidden = true
         
         // trigger to identify that the sceneView was tapped
         // when tapGestureRecognizer is identified it runs the function handleTap
@@ -40,16 +43,16 @@ class ViewController: UIViewController {
         self.restartARSession()
         self.resetScore()
         self.startGame()
-        self.play.isEnabled = false
-        
+        self.play.isHidden = true
     }
     
     @IBAction func reset(_ sender: Any) {
         self.killJelly()
         self.countDown = 0
-        self.countStart = 3
+        self.countStart = 4
         self.timerLabel.text = String(countDown)
-        self.play.isEnabled = true
+        self.play.isHidden = false
+        self.resetButton.isHidden = true
     }
     
     func addNode() {
@@ -114,6 +117,7 @@ class ViewController: UIViewController {
                 self.countDown = 0
                 self.timerLabel.text = String(self.countDown)
                 self.killJelly()
+                self.resetButton.isHidden = false
                 return .stop
             }
             return .continue
@@ -149,27 +153,37 @@ class ViewController: UIViewController {
     }
     
     func startGame() {
+        let guide = SCNNode()
+        guide.geometry = SCNText(string: " Jelly\n\nKiller", extrusionDepth: 3)
+        guide.position = SCNVector3(-0.5,-0.3,-3)
+        guide.scale = SCNVector3(0.02,0.02,0.02)
+        self.sceneView.scene.rootNode.addChildNode(guide)
+        self.fadeNode(node: guide)
+        
         self.timerStart.perform { () -> NextStep in
             print("countStart: " + String(self.countStart))
-            let count = SCNNode()
-            count.geometry = SCNText(string: String(self.countStart), extrusionDepth: 3)
-            count.position = SCNVector3(-0.1,-0.3,-1)
-            count.scale = SCNVector3(0.02,0.02,0.02)
-            self.sceneView.scene.rootNode.addChildNode(count)
-            self.fadeNode(node: count)
             
-            if self.countStart <= 0 {
-                self.countStart = 0
-                
-                count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
-                count.position = SCNVector3(-0.4,-0.3,-2)
+            if self.countStart <= 3 {
+                let count = SCNNode()
+                count.geometry = SCNText(string: String(self.countStart), extrusionDepth: 3)
+                count.position = SCNVector3(-0.1,-0.3,-1)
+                count.scale = SCNVector3(0.02,0.02,0.02)
                 self.sceneView.scene.rootNode.addChildNode(count)
                 self.fadeNode(node: count)
                 
-                self.setTimer()
-                self.addNode()
+                if self.countStart <= 0 {
+                    self.countStart = 0
+                    
+                    count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
+                    count.position = SCNVector3(-0.4,-0.3,-2)
+                    self.sceneView.scene.rootNode.addChildNode(count)
+                    self.fadeNode(node: count)
+                    
+                    self.setTimer()
+                    self.addNode()
 
-                return .stop
+                    return .stop
+                }
             }
             self.countStart -= 1
             return .continue
