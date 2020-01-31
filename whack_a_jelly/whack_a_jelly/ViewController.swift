@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     
     @IBAction func reset(_ sender: Any) {
         self.killJelly()
-        self.resetScore()
         self.restoreTimer()
         self.play.isEnabled = true
     }
@@ -105,7 +104,7 @@ class ViewController: UIViewController {
         self.timer.perform { () -> NextStep in
             self.countDown -= 1
             self.timerLabel.text = String(self.countDown)
-            if self.countDown == 0 {
+            if self.countDown <= 0 {
                 self.killJelly()
                 return .stop
             }
@@ -114,12 +113,14 @@ class ViewController: UIViewController {
     }
     
     func restoreTimer() {
+        self.countDown = 0
         self.countDown = 10
         self.timerLabel.text = String(self.countDown)
     }
     
     func killJelly() {
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate nodes and execute below lines
+            node.runAction(SCNAction.move(by: SCNVector3(0,0.5,0), duration: 2))
             node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
             node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
                                                SCNAction.removeFromParentNode()]))
