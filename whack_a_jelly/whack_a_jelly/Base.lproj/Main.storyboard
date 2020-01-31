@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-Li-Fpi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjj-Cm-I49">
                                 <rect key="frame" x="20" y="547" width="100" height="100"/>
@@ -43,23 +43,50 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUH-Cd-YRg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUF-hZ-j1j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4R-Mv-fDi">
+                                        <rect key="frame" x="158" y="15" width="59" height="20"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="e4R-Mv-fDi" firstAttribute="leading" secondItem="fUF-hZ-j1j" secondAttribute="leading" constant="158" id="GdM-75-heW"/>
+                                    <constraint firstItem="e4R-Mv-fDi" firstAttribute="centerX" secondItem="fUF-hZ-j1j" secondAttribute="centerX" id="OxS-NJ-KKA"/>
+                                    <constraint firstAttribute="trailing" secondItem="e4R-Mv-fDi" secondAttribute="trailing" constant="158" id="UeA-2h-GKh"/>
+                                    <constraint firstAttribute="height" constant="50" id="fUD-4O-MQw"/>
+                                    <constraint firstItem="e4R-Mv-fDi" firstAttribute="centerY" secondItem="fUF-hZ-j1j" secondAttribute="centerY" id="yhS-9u-AhE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bjj-Cm-I49" secondAttribute="bottom" constant="20" id="91D-Pt-dvi"/>
-                            <constraint firstItem="5ci-Li-Fpi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="Ck2-cq-YpV"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9gR-Mf-aSd"/>
+                            <constraint firstItem="5ci-Li-Fpi" firstAttribute="top" secondItem="fUF-hZ-j1j" secondAttribute="bottom" constant="8" id="CpL-cJ-jwv"/>
                             <constraint firstItem="bjj-Cm-I49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D8f-tq-ZZX"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DTr-Tj-Auq"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nsz-cf-so5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="66G-bd-WHz" secondAttribute="bottom" constant="20" id="T4O-eJ-HkO"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VBf-b4-ZUD"/>
                             <constraint firstItem="5ci-Li-Fpi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bfl-Ah-gjf"/>
+                            <constraint firstItem="5ci-Li-Fpi" firstAttribute="top" secondItem="fUF-hZ-j1j" secondAttribute="bottom" constant="8" id="g7q-67-6XO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="66G-bd-WHz" secondAttribute="trailing" constant="20" id="kGF-MB-r5B"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lVR-P5-zgL"/>
                             <constraint firstItem="5ci-Li-Fpi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oFD-3a-ZcJ"/>
                             <constraint firstItem="5ci-Li-Fpi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rDZ-gV-BgR"/>
+                            <constraint firstItem="fUF-hZ-j1j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yav-67-75Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="play" destination="bjj-Cm-I49" id="0QY-9R-D2y"/>
                         <outlet property="sceneView" destination="5ci-Li-Fpi" id="Cpe-M5-TYy"/>
+                        <outlet property="timerLabel" destination="e4R-Mv-fDi" id="qnv-Rv-qnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

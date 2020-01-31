@@ -1,0 +1,6 @@
+framework module Pods_whack_a_jelly_whack_a_jellyUITests {
+  umbrella header "Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

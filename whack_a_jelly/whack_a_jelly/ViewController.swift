@@ -8,9 +8,14 @@
 
 import UIKit
 import ARKit
+import Each
 
 class ViewController: UIViewController {
 
+    var timer = Each(1).seconds
+    var countDown = 10
+    
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
@@ -28,11 +33,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func play(_ sender: Any) {
+        self.setTimer()
         self.addNode()
         self.play.isEnabled = false
     }
     
     @IBAction func reset(_ sender: Any) {
+        self.killJelly()
+        self.restoreTimer()
         self.play.isEnabled = true
     }
     
@@ -40,6 +48,9 @@ class ViewController: UIViewController {
         let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
         let jellyFishNode = jellyFishScene?.rootNode.childNode(withName: "JellyFish", recursively: false)
         jellyFishNode!.position = SCNVector3(0,0,-1)
+//            randomNumbers(firstNum: -1, secondNum: 1),
+//                                             randomNumbers(firstNum: -0.5, secondNum: 0.5),
+//                                             randomNumbers(firstNum: -1, secondNum: 1))
         self.sceneView.scene.rootNode.addChildNode(jellyFishNode!)
     }
     
@@ -51,11 +62,18 @@ class ViewController: UIViewController {
         if hitTest.isEmpty {
             print("didn't touch anything")
         } else {
-            let results = hitTest.first!
+            self.restoreTimer()
+            let results = hitTest.first!.node
             
             // check if an animation is currently running to prevent animation to occur while one is occuring
-            if results.node.animationKeys.isEmpty {
-                self.animateNode(node: results.node)
+            if results.animationKeys.isEmpty {
+                SCNTransaction.begin()              // begins tracking the a transaction
+                self.animateNode(node: results)
+                SCNTransaction.completionBlock = {  // once animation between this line and .begin() completes define lines to be executed
+                    results.removeFromParentNode()
+                    self.addNode()
+                }
+                SCNTransaction.commit()             // execute lines defined within the completionBlock
             }
         }
     }
@@ -69,12 +87,39 @@ class ViewController: UIViewController {
 //        spin.autoreverses = true // undo animation back to original position
         node.addAnimation(spin, forKey: "position") // triger annimation
         
-        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
-        node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
-                                           SCNAction.removeFromParentNode()]))
+        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1)) // fade out
 
-
-        
+    }
+    
+    // gives you a random number in the range you give it
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
+    func setTimer() {
+        self.timer.perform { () -> NextStep in
+            self.countDown -= 1
+            self.timerLabel.text = String(self.countDown)
+            if self.countDown == 0 {
+                self.timerLabel.text = "You Lose"
+                self.killJelly()
+                return .stop
+            }
+            return .continue
+        }
+    }
+    
+    func restoreTimer() {
+        self.countDown = 10
+        self.timerLabel.text = String(self.countDown)
+    }
+    
+    func killJelly() {
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate nodes and execute below lines
+            node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
+            node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
+                                               SCNAction.removeFromParentNode()]))
+        }
     }
 }
 

@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'whack_a_jelly' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for whack_a_jelly
+
+  pod 'Each', '~> 1.2'
+
+  target 'whack_a_jellyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'whack_a_jellyUITests' do
+    # Pods for testing
+  end
+
+end
