@@ -13,13 +13,15 @@ import Each
 class ViewController: UIViewController {
 
     var timer = Each(1).seconds
+    var timerStart = Each(1.2).seconds
     var countDown = 10
-    
+    var countStart = 3
     var score = 0
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
     
@@ -27,33 +29,38 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
-        
+        self.resetButton.isHidden = true
+
         // trigger to identify that the sceneView was tapped
         // when tapGestureRecognizer is identified it runs the function handleTap
         let tapGestureReocgnizer = UITapGestureRecognizer(target:self, action: #selector(handleTap))
         self.sceneView.addGestureRecognizer(tapGestureReocgnizer)
- 
+        
     }
 
     @IBAction func play(_ sender: Any) {
-        self.setTimer()
-        self.addNode()
+        self.restartARSession()
+        self.resetScore()
+        self.startGame()
         self.play.isEnabled = false
+        play.isHidden = true
     }
     
     @IBAction func reset(_ sender: Any) {
         self.killJelly()
-        self.restoreTimer()
+        self.countDown = 0
+        self.countStart = 3
+        self.timerLabel.text = String(countDown)
         self.play.isEnabled = true
+        play.isHidden = false
     }
     
     func addNode() {
         let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
         let jellyFishNode = jellyFishScene?.rootNode.childNode(withName: "JellyFish", recursively: false)
-        jellyFishNode!.position = SCNVector3(0,0,-1)
-//            randomNumbers(firstNum: -1, secondNum: 1),
-//                                             randomNumbers(firstNum: -0.5, secondNum: 0.5),
-//                                             randomNumbers(firstNum: -1, secondNum: 1))
+        jellyFishNode!.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
+                                             randomNumbers(firstNum: -0.3, secondNum: 0.3),
+                                             randomNumbers(firstNum: -1, secondNum: 1))
         self.sceneView.scene.rootNode.addChildNode(jellyFishNode!)
     }
     
@@ -67,6 +74,7 @@ class ViewController: UIViewController {
         } else {
             self.restoreTimer()
             self.incScore()
+            self.addNode()
             let results = hitTest.first!.node
             
             // check if an animation is currently running to prevent animation to occur while one is occuring
@@ -75,7 +83,6 @@ class ViewController: UIViewController {
                 self.animateNode(node: results)
                 SCNTransaction.completionBlock = {  // once animation between this line and .begin() completes define lines to be executed
                     results.removeFromParentNode()
-                    self.addNode()
                 }
                 SCNTransaction.commit()             // execute lines defined within the completionBlock
             }
@@ -101,11 +108,16 @@ class ViewController: UIViewController {
     }
     
     func setTimer() {
+        restoreTimer()
         self.timer.perform { () -> NextStep in
+            print("countDown: " + String(self.countDown))
             self.countDown -= 1
             self.timerLabel.text = String(self.countDown)
             if self.countDown <= 0 {
+                self.countDown = 0
+                self.timerLabel.text = String(self.countDown)
                 self.killJelly()
+                self.play.isHidden = false
                 return .stop
             }
             return .continue
@@ -113,28 +125,66 @@ class ViewController: UIViewController {
     }
     
     func restoreTimer() {
-        self.countDown = 0
         self.countDown = 10
         self.timerLabel.text = String(self.countDown)
     }
     
     func killJelly() {
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate nodes and execute below lines
-            node.runAction(SCNAction.move(by: SCNVector3(0,0.5,0), duration: 2))
-            node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
-            node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
-                                               SCNAction.removeFromParentNode()]))
+            self.fadeNode(node: node)
         }
     }
     
+    
+    
     func incScore() {
-        score += 1
+        self.score += 1
         self.scoreLabel.text = String(score)
     }
     
     func resetScore() {
-        score = 0
+        self.score = 0
         self.scoreLabel.text = String(score)
+    }
+    
+    func restartARSession() {
+        self.sceneView.session.pause() // stops keeping track of your position and orientation
+        self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors]) // forget old starting position and orientation and make a new one based on where you are
+    }
+    
+    func startGame() {
+        self.timerStart.perform { () -> NextStep in
+            print("countStart: " + String(self.countStart))
+            let count = SCNNode()
+            count.geometry = SCNText(string: String(self.countStart), extrusionDepth: 3)
+            count.position = SCNVector3(-0.1,-0.3,-1)
+            count.scale = SCNVector3(0.02,0.02,0.02)
+            self.sceneView.scene.rootNode.addChildNode(count)
+            self.fadeNode(node: count)
+            
+            if self.countStart <= 0 {
+                self.countStart = 0
+                
+                count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
+                count.position = SCNVector3(-0.4,-0.3,-2)
+                self.sceneView.scene.rootNode.addChildNode(count)
+                self.fadeNode(node: count)
+                
+                self.setTimer()
+                self.addNode()
+
+                return .stop
+            }
+            self.countStart -= 1
+            return .continue
+        }
+    }
+    
+    func fadeNode(node: SCNNode) {
+        node.runAction(SCNAction.move(by: SCNVector3(0,0.5,0), duration: 2))
+        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
+        node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
+                                            SCNAction.removeFromParentNode()]))
     }
 }
 
