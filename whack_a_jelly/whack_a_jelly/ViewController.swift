@@ -155,6 +155,7 @@ class ViewController: UIViewController {
     func startGame() {
         let guide = SCNNode()
         guide.geometry = SCNText(string: "Whack\n\n     a\n\n  Jelly", extrusionDepth: 3)
+        guide.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         guide.position = SCNVector3(-0.4,-1,-2.5)
         guide.scale = SCNVector3(0.02,0.02,0.02)
         self.sceneView.scene.rootNode.addChildNode(guide)
