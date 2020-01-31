@@ -131,7 +131,7 @@ class ViewController: UIViewController {
     
     func killJelly() {
         self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate nodes and execute below lines
-            self.fadeNode(node: node)
+            self.fadeNode(node: node, duration: 1)
         }
     }
     
@@ -155,11 +155,10 @@ class ViewController: UIViewController {
     func startGame() {
         let guide = SCNNode()
         guide.geometry = SCNText(string: "Whack\n\n     a\n\n  Jelly", extrusionDepth: 3)
-        guide.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         guide.position = SCNVector3(-0.4,-1,-2.5)
         guide.scale = SCNVector3(0.02,0.02,0.02)
         self.sceneView.scene.rootNode.addChildNode(guide)
-        self.fadeNode(node: guide)
+        self.fadeNode(node: guide, duration: 2.5)
         
         self.timerStart.perform { () -> NextStep in
             print("countStart: " + String(self.countStart))
@@ -170,7 +169,7 @@ class ViewController: UIViewController {
                 count.position = SCNVector3(-0.1,-0.3,-1)
                 count.scale = SCNVector3(0.02,0.02,0.02)
                 self.sceneView.scene.rootNode.addChildNode(count)
-                self.fadeNode(node: count)
+                self.fadeNode(node: count, duration: 1)
                 
                 if self.countStart <= 0 {
                     self.countStart = 0
@@ -178,7 +177,7 @@ class ViewController: UIViewController {
                     count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
                     count.position = SCNVector3(-0.4,-0.3,-2)
                     self.sceneView.scene.rootNode.addChildNode(count)
-                    self.fadeNode(node: count)
+                    self.fadeNode(node: count, duration: 1)
                     
                     self.setTimer()
                     self.addNode()
@@ -191,10 +190,10 @@ class ViewController: UIViewController {
         }
     }
     
-    func fadeNode(node: SCNNode) {
+    func fadeNode(node: SCNNode, duration: TimeInterval) {
         node.runAction(SCNAction.move(by: SCNVector3(0,0.5,0), duration: 2))
-        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1))
-        node.runAction(SCNAction.sequence([SCNAction.wait(duration: 1),
+        node.runAction(SCNAction.fadeOpacity(to: 0, duration: duration))
+        node.runAction(SCNAction.sequence([SCNAction.wait(duration: duration),
                                             SCNAction.removeFromParentNode()]))
     }
 }
