@@ -196,5 +196,9 @@ class ViewController: UIViewController {
         node.runAction(SCNAction.sequence([SCNAction.wait(duration: duration),
                                             SCNAction.removeFromParentNode()]))
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
