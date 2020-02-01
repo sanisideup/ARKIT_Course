@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     
     // gives you a random number in the range you give it
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+        return CGFloat(arc4random()) / CGFloat(	UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
     
 }
