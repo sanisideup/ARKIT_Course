@@ -14,6 +14,7 @@
 		C0543A8623E526C800F339D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0543A8423E526C800F339D9 /* LaunchScreen.storyboard */; };
 		C0543A9123E526C800F339D9 /* ikeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543A9023E526C800F339D9 /* ikeaTests.swift */; };
 		C0543A9C23E526C800F339D9 /* ikeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543A9B23E526C800F339D9 /* ikeaUITests.swift */; };
+		C0543AAA23E52DC300F339D9 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543AA923E52DC300F339D9 /* itemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C0543A9723E526C800F339D9 /* ikeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0543A9B23E526C800F339D9 /* ikeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikeaUITests.swift; sourceTree = "<group>"; };
 		C0543A9D23E526C800F339D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0543AA923E52DC300F339D9 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C0543A8223E526C800F339D9 /* Assets.xcassets */,
 				C0543A8423E526C800F339D9 /* LaunchScreen.storyboard */,
 				C0543A8723E526C800F339D9 /* Info.plist */,
+				C0543AA923E52DC300F339D9 /* itemCell.swift */,
 			);
 			path = ikea;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0543A7E23E526C700F339D9 /* ViewController.swift in Sources */,
+				C0543AAA23E52DC300F339D9 /* itemCell.swift in Sources */,
 				C0543A7C23E526C700F339D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,12 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5536WL3D7;
 				INFOPLIST_FILE = ikea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = r.ikea;
+				PRODUCT_BUNDLE_IDENTIFIER = r.ikea1234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +455,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5536WL3D7;
 				INFOPLIST_FILE = ikea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = r.ikea;
+				PRODUCT_BUNDLE_IDENTIFIER = r.ikea1234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
