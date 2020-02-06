@@ -15,6 +15,7 @@
 		C0543A9123E526C800F339D9 /* ikeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543A9023E526C800F339D9 /* ikeaTests.swift */; };
 		C0543A9C23E526C800F339D9 /* ikeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543A9B23E526C800F339D9 /* ikeaUITests.swift */; };
 		C0543AAA23E52DC300F339D9 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0543AA923E52DC300F339D9 /* itemCell.swift */; };
+		C0543AB023EBE2E000F339D9 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C0543AAF23EBE2E000F339D9 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C0543A9B23E526C800F339D9 /* ikeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikeaUITests.swift; sourceTree = "<group>"; };
 		C0543A9D23E526C800F339D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0543AA923E52DC300F339D9 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		C0543AAF23EBE2E000F339D9 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C0543A7B23E526C700F339D9 /* AppDelegate.swift */,
+				C0543AAF23EBE2E000F339D9 /* Models.scnassets */,
 				C0543A7D23E526C700F339D9 /* ViewController.swift */,
 				C0543A7F23E526C700F339D9 /* Main.storyboard */,
 				C0543A8223E526C800F339D9 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0543A8623E526C800F339D9 /* LaunchScreen.storyboard in Resources */,
+				C0543AB023EBE2E000F339D9 /* Models.scnassets in Resources */,
 				C0543A8323E526C800F339D9 /* Assets.xcassets in Resources */,
 				C0543A8123E526C700F339D9 /* Main.storyboard in Resources */,
 			);
