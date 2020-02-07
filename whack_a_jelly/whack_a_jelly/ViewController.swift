@@ -72,9 +72,6 @@ class ViewController: UIViewController {
         if hitTest.isEmpty {
             print("didn't touch anything")
         } else {
-            self.restoreTimer()
-            self.incScore()
-            self.addNode()
             let results = hitTest.first!.node
             
             // check if an animation is currently running to prevent animation to occur while one is occuring
@@ -83,6 +80,9 @@ class ViewController: UIViewController {
                 self.animateNode(node: results)
                 SCNTransaction.completionBlock = {  // once animation between this line and .begin() completes define lines to be executed
                     results.removeFromParentNode()
+                    self.addNode()
+                    self.incScore()
+                    self.restoreTimer()
                 }
                 SCNTransaction.commit()             // execute lines defined within the completionBlock
             }
