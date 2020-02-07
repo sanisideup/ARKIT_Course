@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     var timer = Each(1).seconds
     var timerStart = Each(1.2).seconds
-    var countDown = 10
+    var countDown = 5
     var countStart = 4
     var score = 0
     
@@ -125,7 +125,7 @@ class ViewController: UIViewController {
     }
     
     func restoreTimer() {
-        self.countDown = 10
+        self.countDown = 5
         self.timerLabel.text = String(self.countDown)
     }
     
@@ -159,7 +159,10 @@ class ViewController: UIViewController {
         guide.scale = SCNVector3(0.02,0.02,0.02)
         self.sceneView.scene.rootNode.addChildNode(guide)
         self.fadeNode(node: guide, duration: 2.5)
-        
+        self.gameCountDown()
+    }
+    
+    func gameCountDown() {
         self.timerStart.perform { () -> NextStep in
             print("countStart: " + String(self.countStart))
             
@@ -181,7 +184,7 @@ class ViewController: UIViewController {
                     
                     self.setTimer()
                     self.addNode()
-
+                    
                     return .stop
                 }
             }
