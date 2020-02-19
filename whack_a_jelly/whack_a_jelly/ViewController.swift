@@ -153,12 +153,22 @@ class ViewController: UIViewController {
     }
     
     func startGame() {
+        
+        // title screen
         let guide = SCNNode()
         guide.geometry = SCNText(string: "Whack\n\n     a\n\n  Jelly", extrusionDepth: 3)
-        guide.position = SCNVector3(-0.4,-1,-2.5)
-        guide.scale = SCNVector3(0.02,0.02,0.02)
+        guide.position = self.getCameraPosition()
+        guide.scale = SCNVector3(0.005,0.005,0.005)
+        
+        // force title text to face camera
+        let billboardConstraint = SCNBillboardConstraint()
+        billboardConstraint.freeAxes = [.X, .Y, .Z]
+        guide.constraints = [billboardConstraint]
+        
         self.sceneView.scene.rootNode.addChildNode(guide)
-        self.fadeNode(node: guide, duration: 2.5)
+        self.fadeNode(node: guide, duration: 3)
+        
+        // begin countdown
         self.gameCountDown()
     }
     
@@ -169,8 +179,14 @@ class ViewController: UIViewController {
             if self.countStart <= 3 {
                 let count = SCNNode()
                 count.geometry = SCNText(string: String(self.countStart), extrusionDepth: 3)
-                count.position = SCNVector3(-0.1,-0.3,-1)
-                count.scale = SCNVector3(0.02,0.02,0.02)
+                count.position = self.getCameraPosition()
+                count.scale = SCNVector3(0.01,0.01,0.01)
+                
+                // force count text to face camera
+                let billboardConstraint = SCNBillboardConstraint()
+                billboardConstraint.freeAxes = [.X, .Y, .Z]
+                count.constraints = [billboardConstraint]
+                
                 self.sceneView.scene.rootNode.addChildNode(count)
                 self.fadeNode(node: count, duration: 1)
                 
@@ -178,7 +194,8 @@ class ViewController: UIViewController {
                     self.countStart = 0
                     
                     count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
-                    count.position = SCNVector3(-0.4,-0.3,-2)
+                    count.position = self.getCameraPosition()
+                    count.scale = SCNVector3(0.01,0.01,0.01)
                     self.sceneView.scene.rootNode.addChildNode(count)
                     self.fadeNode(node: count, duration: 1)
                     
@@ -203,5 +220,18 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    func getCameraPosition() -> SCNVector3 {
+        guard let pointOfView = sceneView.pointOfView else {return SCNVector3(0,0,0)}
+        let transform = pointOfView.transform
+        let orientation = SCNVector3(-transform.m31,-transform.m32,-transform.m33)
+        let location = SCNVector3(transform.m41,transform.m42,transform.m43)
+        let currentPositionOfCamera = orientation + location
+        return currentPositionOfCamera
+    }
 }
 
+// function to combine 2 vectors together
+func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {
+    return SCNVector3Make(left.x + right.x, left.y + right.y, left.z + right.z)
+}
