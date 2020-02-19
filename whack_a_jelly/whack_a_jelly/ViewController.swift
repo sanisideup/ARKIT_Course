@@ -10,7 +10,7 @@ import UIKit
 import ARKit
 import Each
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ARSCNViewDelegate {
 
     var timer = Each(1).seconds
     var timerStart = Each(1.2).seconds
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var outOfBounds: UILabel!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
 
@@ -31,12 +32,29 @@ class ViewController: UIViewController {
         self.sceneView.session.run(configuration)
         self.play.isHidden = false
         self.resetButton.isHidden = true
+        self.outOfBounds.isHidden = true
         
         // trigger to identify that the sceneView was tapped
         // when tapGestureRecognizer is identified it runs the function handleTap
         let tapGestureReocgnizer = UITapGestureRecognizer(target:self, action: #selector(handleTap))
         self.sceneView.addGestureRecognizer(tapGestureReocgnizer)
+        
+        self.sceneView.delegate = self // set sceneView delegate to self so that the delegate function "renderer" can be run
  
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
+        guard let pointOfView = sceneView.pointOfView else {return}
+        let transform = pointOfView.transform
+        let location = SCNVector3(transform.m41,transform.m42,transform.m43)
+        let distanceFromCenter = sqrtf(location.x*location.x + location.y*location.y + location.z*location.z)
+        
+        if distanceFromCenter > 1 {
+            self.outOfBounds.isHidden = false
+            print("out of bounds")
+        } else {
+            self.outOfBounds.isHidden = true
+        }
     }
 
     @IBAction func play(_ sender: Any) {
@@ -195,7 +213,6 @@ class ViewController: UIViewController {
                     
                     count.geometry = SCNText(string: String("Begin!"), extrusionDepth: 3)
                     count.position = self.getCameraPosition()
-                    count.scale = SCNVector3(0.01,0.01,0.01)
                     self.sceneView.scene.rootNode.addChildNode(count)
                     self.fadeNode(node: count, duration: 1)
                     
