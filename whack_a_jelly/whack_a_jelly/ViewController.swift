@@ -17,6 +17,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var countDown = 5
     var countStart = 4
     var score = 0
+    var boundaryOn = true
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
@@ -31,7 +32,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
         self.play.isHidden = false
-        self.resetButton.isHidden = true
+        self.resetButton.isHidden = false
         self.outOfBounds.isHidden = true
         
         // trigger to identify that the sceneView was tapped
@@ -40,16 +41,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.addGestureRecognizer(tapGestureReocgnizer)
         
         self.sceneView.delegate = self // set sceneView delegate to self so that the delegate function "renderer" can be run
- 
+        
+        self.createBoundary()
+        
     }
     
+    // checks if outside if player outside is out of play area (1m radius)
     func renderer(_ renderer: SCNSceneRenderer, willRenderScene scene: SCNScene, atTime time: TimeInterval) {
         guard let pointOfView = sceneView.pointOfView else {return}
         let transform = pointOfView.transform
         let location = SCNVector3(transform.m41,transform.m42,transform.m43)
-        let distanceFromCenter = sqrtf(location.x*location.x + location.y*location.y + location.z*location.z)
+        let distanceFromCenter = sqrtf(location.x*location.x + location.z*location.z)
         
-        if distanceFromCenter > 1 {
+        if distanceFromCenter > 1 && boundaryOn {
             self.outOfBounds.isHidden = false
             print("out of bounds")
         } else {
@@ -61,6 +65,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.resetScore()
         self.startGame()
         self.play.isHidden = true
+        self.resetButton.isHidden = true
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -70,15 +75,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.countStart = 4
         self.timerLabel.text = String(countDown)
         self.play.isHidden = false
-        self.resetButton.isHidden = true
+        self.createBoundary()
     }
     
     func addNode() {
         let jellyFishScene = SCNScene(named: "art.scnassets/Jellyfish.scn")
         let jellyFishNode = jellyFishScene?.rootNode.childNode(withName: "JellyFish", recursively: false)
-        jellyFishNode!.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
+        jellyFishNode!.position = SCNVector3(randomNumbers(firstNum: -2, secondNum: 2),
                                              randomNumbers(firstNum: -0.3, secondNum: 0.3),
-                                             randomNumbers(firstNum: -1, secondNum: 1))
+                                             randomNumbers(firstNum: -2, secondNum: 2))
         self.sceneView.scene.rootNode.addChildNode(jellyFishNode!)
     }
     
@@ -136,6 +141,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 self.timerLabel.text = String(self.countDown)
                 self.killJelly()
                 self.resetButton.isHidden = false
+                self.boundaryOn = false // set to false to prevent out of boundary text to pop up
                 return .stop
             }
             return .continue
@@ -245,6 +251,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let location = SCNVector3(transform.m41,transform.m42,transform.m43)
         let currentPositionOfCamera = orientation + location
         return currentPositionOfCamera
+    }
+    
+    // create 1m radius for player to visualize boundary
+    func createBoundary() {
+        self.boundaryOn = true
+        let boundary = SCNNode(geometry: SCNTube(innerRadius: 1.0, outerRadius: 1.02, height: 0.1))
+        boundary.geometry?.firstMaterial?.diffuse.contents = UIColor.lightGray
+        boundary.position = SCNVector3(0,-1.7,0)
+        self.sceneView.scene.rootNode.addChildNode(boundary)
     }
 }
 
