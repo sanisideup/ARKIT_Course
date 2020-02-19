@@ -1,4 +1,4 @@
-framework module Pods_whack_a_jelly {
+module Pods_whack_a_jelly {
   umbrella header "Pods-whack_a_jelly-umbrella.h"
 
   export *

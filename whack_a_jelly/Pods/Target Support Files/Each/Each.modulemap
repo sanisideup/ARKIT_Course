@@ -1,4 +1,4 @@
-framework module Each {
+module Each {
   umbrella header "Each-umbrella.h"
 
   export *

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AD18729E39AB01CA0532333 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A6B58A8084633F9990DB0 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */; };
-		516B53885EA6BD26EAE2D402 /* Pods_whack_a_jellyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8311D316C3761C7B4C4A4600 /* Pods_whack_a_jellyTests.framework */; };
-		7F50B5A60ED1617D16BE5245 /* Pods_whack_a_jelly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A74DDE5CF3B63181DDFE80 /* Pods_whack_a_jelly.framework */; };
+		45D5D553CC1A27C7E3A9E81F /* libPods-whack_a_jelly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB9AE86CBDD5B24A8BC5AC0 /* libPods-whack_a_jelly.a */; };
+		AD9ACCFBBA6AD67C825CD6A6 /* libPods-whack_a_jellyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDED3BE5DBCFB8172B87E8E6 /* libPods-whack_a_jellyTests.a */; };
 		C0543A3423E3CD3900F339D9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C0543A3323E3CD3900F339D9 /* art.scnassets */; };
 		C088269423E2A4360064EB67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C088269323E2A4360064EB67 /* AppDelegate.swift */; };
 		C088269623E2A4360064EB67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C088269523E2A4360064EB67 /* ViewController.swift */; };
@@ -19,6 +18,7 @@
 		C08826A923E2A43A0064EB67 /* whack_a_jellyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08826A823E2A43A0064EB67 /* whack_a_jellyTests.swift */; };
 		C08826B423E2A43A0064EB67 /* whack_a_jellyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08826B323E2A43A0064EB67 /* whack_a_jellyUITests.swift */; };
 		C08826C423E3CACB0064EB67 /* Jellyfish.png in Resources */ = {isa = PBXBuildFile; fileRef = C08826C323E3CACB0064EB67 /* Jellyfish.png */; };
+		D0E3C2EC3434F093F1891B90 /* libPods-whack_a_jelly-whack_a_jellyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66794CC53F94B490D78F3C /* libPods-whack_a_jelly-whack_a_jellyUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E66794CC53F94B490D78F3C /* libPods-whack_a_jelly-whack_a_jellyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whack_a_jelly-whack_a_jellyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6CFB8A005B881FD8E8387D /* Pods-whack_a_jelly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jelly.debug.xcconfig"; path = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly.debug.xcconfig"; sourceTree = "<group>"; };
 		80396E543AAA04884B8E2A26 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig"; path = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8311D316C3761C7B4C4A4600 /* Pods_whack_a_jellyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whack_a_jellyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		877A6B58A8084633F9990DB0 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whack_a_jelly_whack_a_jellyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB55E7F478B3D5D991F98A84 /* Pods-whack_a_jellyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jellyTests.release.xcconfig"; path = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests.release.xcconfig"; sourceTree = "<group>"; };
-		B2A74DDE5CF3B63181DDFE80 /* Pods_whack_a_jelly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whack_a_jelly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDED3BE5DBCFB8172B87E8E6 /* libPods-whack_a_jellyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whack_a_jellyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0543A3323E3CD3900F339D9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		C088269023E2A4360064EB67 /* whack_a_jelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whack_a_jelly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C088269323E2A4360064EB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		D3B1D6F71EBBAC1466082E11 /* Pods-whack_a_jellyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jellyTests.debug.xcconfig"; path = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BA41331C49670A14376D17 /* Pods-whack_a_jelly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jelly.release.xcconfig"; path = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly.release.xcconfig"; sourceTree = "<group>"; };
 		ECA856F6620E76B57355C6A7 /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig"; path = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB9AE86CBDD5B24A8BC5AC0 /* libPods-whack_a_jelly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whack_a_jelly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F50B5A60ED1617D16BE5245 /* Pods_whack_a_jelly.framework in Frameworks */,
+				45D5D553CC1A27C7E3A9E81F /* libPods-whack_a_jelly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516B53885EA6BD26EAE2D402 /* Pods_whack_a_jellyTests.framework in Frameworks */,
+				AD9ACCFBBA6AD67C825CD6A6 /* libPods-whack_a_jellyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD18729E39AB01CA0532333 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework in Frameworks */,
+				D0E3C2EC3434F093F1891B90 /* libPods-whack_a_jelly-whack_a_jellyUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +96,9 @@
 		29D10876349FD0CF848779F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2A74DDE5CF3B63181DDFE80 /* Pods_whack_a_jelly.framework */,
-				877A6B58A8084633F9990DB0 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */,
-				8311D316C3761C7B4C4A4600 /* Pods_whack_a_jellyTests.framework */,
+				EFB9AE86CBDD5B24A8BC5AC0 /* libPods-whack_a_jelly.a */,
+				2E66794CC53F94B490D78F3C /* libPods-whack_a_jelly-whack_a_jellyUITests.a */,
+				BDED3BE5DBCFB8172B87E8E6 /* libPods-whack_a_jellyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,7 +183,6 @@
 				C088268C23E2A4360064EB67 /* Sources */,
 				C088268D23E2A4360064EB67 /* Frameworks */,
 				C088268E23E2A4360064EB67 /* Resources */,
-				E8DCE578ECAFD17E8FD14FF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,7 +220,6 @@
 				C08826AB23E2A43A0064EB67 /* Sources */,
 				C08826AC23E2A43A0064EB67 /* Frameworks */,
 				C08826AD23E2A43A0064EB67 /* Resources */,
-				B0323CB6A6D7C3A1DB999EBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,23 +326,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B0323CB6A6D7C3A1DB999EBF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D31D3131B861EE731D6496F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,23 +346,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8DCE578ECAFD17E8FD14FF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA924AFA4F32185CE9DC9B44 /* [CP] Check Pods Manifest.lock */ = {

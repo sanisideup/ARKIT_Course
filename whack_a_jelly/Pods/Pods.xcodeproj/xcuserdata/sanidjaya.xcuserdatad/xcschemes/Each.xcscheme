@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD6DE87E23372BE22FADE859119E8487"
-               BuildableName = "Each.framework"
+               BuildableName = "libEach.a"
                BlueprintName = "Each"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

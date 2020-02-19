@@ -7,37 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3870DA0F8CA02D608B62E6A2EBB870B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		435DFD893CE3EF42359EF34475E08C2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4F5654857C8115F174EBF34EF2FF0630 /* Each-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7D71EBD3EC027CB24F560B90F67F0 /* Each-dummy.m */; };
-		4FBECEC33FA6B7A1BBB239E70658D105 /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DD9096109DAE4F22BFE8746757AF3B /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */; };
-		6E13E97087D3B3EDAE7B87E6960B7F5C /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A876C1B62377D4BFACC0AF25FFA4C5C8 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		968BBB0A25897493281C1CBA064B4DCC /* Pods-whack_a_jellyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC5F01CE9E99733243F74D6784E46A4 /* Pods-whack_a_jellyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8A10DBDB3D83164B4FEFDA1D95C2EC /* Each-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C111E583CB414C619F01360EF594896F /* Each-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA429C2202036A34473722BF0ACDFD85 /* Pods-whack_a_jelly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F057B285D965F019F9A350DE4FE7B /* Pods-whack_a_jelly-dummy.m */; };
-		CBEB210C9EBBD3D0A9D9FF25EDE7EB0E /* Pods-whack_a_jellyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A279967321C7A6581AC781EB4B50682 /* Pods-whack_a_jellyTests-dummy.m */; };
-		D40D509317EA2E58E29CFE7DA4A6D350 /* Pods-whack_a_jelly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2689B215951782275116196E39A817 /* Pods-whack_a_jelly-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE5008E551E2BDAFB623E2B752D8C4A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F2303209B7FA1F2B76A95F5FC7B7AF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FCC61C7EBF1FCA0B2AB821A3B5E70142 /* Each.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F667A5C59E17B268A7B81E4F6825AB /* Each.swift */; };
+		16D1D099E1F7F16EF4C0D189D80C0E61 /* Each-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5369EC20F8917644AA48EAB77B0D3 /* Each-dummy.m */; };
+		426D1C65BDBF7EE60CEAC0CEF4DB0AE7 /* Pods-whack_a_jelly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11269671D891474913ABE025EEA6B23D /* Pods-whack_a_jelly-dummy.m */; };
+		4B0F770D505A95643D6DFC1AFBF3F9AB /* Each-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A1F5B2E7F64FEF477B288AF83045F7 /* Each-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84E398F13626FB4C4D9583DEEB7A55C6 /* Each.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D0796FF08A845EA3F1DA5E3610D03 /* Each.swift */; };
+		913585D05D5279CCD5DCC9FEED02690F /* Pods-whack_a_jellyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DF7BE2A051085F6B38AFC82BF12C07 /* Pods-whack_a_jellyTests-dummy.m */; };
+		9FB91E8CF9F44F828132FB9319A903CD /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB391B42BC8B78AB12FA2E7130DCEC68 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C149FC48F0A72111BCDC4360260DAE4C /* Pods-whack_a_jelly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40ECF1BE0851551E788AC078B637EF66 /* Pods-whack_a_jelly-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F70DE6518D364E13BF96DE074D895FBD /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE73067FBF50D3461E47671C5C2403F /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D33750E4C64C56E3EBEFA2C4A52E98F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5557F2865A8D6685700A64AAB79D2B5;
-			remoteInfo = "Pods-whack_a_jelly";
-		};
-		54ECC2AB3FA28F701B4F26EAB5D24E7F /* PBXContainerItemProxy */ = {
+		248B9F444C7CA1B0D88B07322F995BE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DD6DE87E23372BE22FADE859119E8487;
 			remoteInfo = Each;
 		};
-		ADF5E0A6F42536AB4DCDDD7744A2F6B5 /* PBXContainerItemProxy */ = {
+		3FA4698906EF2BE44DA4B7EE9A817B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5557F2865A8D6685700A64AAB79D2B5;
+			remoteInfo = "Pods-whack_a_jelly";
+		};
+		AEAA716B52E4376469C8C40E7649BB8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,245 +42,214 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FD76543E7D10E155CED9440E7B5B7E /* Pods_whack_a_jellyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_whack_a_jellyTests.framework; path = "Pods-whack_a_jellyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		011C1C7392F87809A0EA99807C9DEAFE /* Each.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Each.framework; path = Each.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		027BA28C03C2B1A3472E5C1AD3FCE814 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_whack_a_jelly_whack_a_jellyUITests.framework; path = "Pods-whack_a_jelly-whack_a_jellyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C05ABB9E36947D6224E9A994816FC6D /* Pods-whack_a_jellyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-whack_a_jellyTests.modulemap"; sourceTree = "<group>"; };
-		0DC88E4AFA2B3B57372A2B17F4874CA5 /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F9B2936D178DFDF14BCC0498CC444C0 /* Each.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Each.xcconfig; sourceTree = "<group>"; };
-		12441EDF942CAA673B888344A5C5DE14 /* Pods_whack_a_jelly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_whack_a_jelly.framework; path = "Pods-whack_a_jelly.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		199C0FBEADF485E678091B728DB16F13 /* Pods-whack_a_jellyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jellyTests-Info.plist"; sourceTree = "<group>"; };
-		1E32334C586787A7AF1CD69CF578397A /* Pods-whack_a_jellyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jellyTests.release.xcconfig"; sourceTree = "<group>"; };
-		2E3C2C9B30909A616EE396E7644B6E89 /* Pods-whack_a_jelly-whack_a_jellyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-whack_a_jelly-whack_a_jellyUITests.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		330AED234119F78312D5A1F6403EB4DB /* Each-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Each-Info.plist"; sourceTree = "<group>"; };
-		348F8F8FC0283E9C9FADD729B8F63623 /* Pods-whack_a_jelly-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-acknowledgements.plist"; sourceTree = "<group>"; };
-		3DB8E3B356CDE2C436305BDF5DE3A9FA /* Pods-whack_a_jellyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jellyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		42F0DFB0A64737CF7497057A3E299DDB /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		42F667A5C59E17B268A7B81E4F6825AB /* Each.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Each.swift; path = Sources/Each.swift; sourceTree = "<group>"; };
-		432F0CCE4CE2E79E597F4EF691C8D7E3 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		650100BBC480E5D2FCCA32E3A1954087 /* Pods-whack_a_jelly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly.release.xcconfig"; sourceTree = "<group>"; };
-		69E82C5B9A6C00660FB26074D3744E3A /* Pods-whack_a_jelly-whack_a_jellyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-whack_a_jelly-whack_a_jellyUITests-frameworks.sh"; sourceTree = "<group>"; };
-		864BA492AB0631EE9A441AD947E18C91 /* Pods-whack_a_jelly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly.debug.xcconfig"; sourceTree = "<group>"; };
-		9A279967321C7A6581AC781EB4B50682 /* Pods-whack_a_jellyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jellyTests-dummy.m"; sourceTree = "<group>"; };
-		9C43E36EDBB08EAA767003E886100CED /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		00FD76543E7D10E155CED9440E7B5B7E /* libPods-whack_a_jellyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-whack_a_jellyTests.a"; path = "libPods-whack_a_jellyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011C1C7392F87809A0EA99807C9DEAFE /* libEach.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEach.a; path = libEach.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		027BA28C03C2B1A3472E5C1AD3FCE814 /* libPods-whack_a_jelly-whack_a_jellyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-whack_a_jelly-whack_a_jellyUITests.a"; path = "libPods-whack_a_jelly-whack_a_jellyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F5369EC20F8917644AA48EAB77B0D3 /* Each-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Each-dummy.m"; sourceTree = "<group>"; };
+		0AE73067FBF50D3461E47671C5C2403F /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m"; sourceTree = "<group>"; };
+		0BC4C38BBF54F80966613352AD525C0D /* Each.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Each.modulemap; sourceTree = "<group>"; };
+		11269671D891474913ABE025EEA6B23D /* Pods-whack_a_jelly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jelly-dummy.m"; sourceTree = "<group>"; };
+		12441EDF942CAA673B888344A5C5DE14 /* libPods-whack_a_jelly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-whack_a_jelly.a"; path = "libPods-whack_a_jelly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A39CAACBB82145CD868C1917635FB48 /* Pods-whack_a_jellyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jellyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20A1F5B2E7F64FEF477B288AF83045F7 /* Each-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Each-umbrella.h"; sourceTree = "<group>"; };
+		3CA645F73768F83DB48912E02188CADB /* Pods-whack_a_jelly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly.debug.xcconfig"; sourceTree = "<group>"; };
+		40ECF1BE0851551E788AC078B637EF66 /* Pods-whack_a_jelly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whack_a_jelly-umbrella.h"; sourceTree = "<group>"; };
+		4CC618C52AF6A256C429E22AC3B08DB5 /* Each-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Each-prefix.pch"; sourceTree = "<group>"; };
+		66FDE1BF6EF439E63293122945414A6F /* Pods-whack_a_jellyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jellyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		676E207A635D007B8F1C1F093B6A4630 /* Pods-whack_a_jelly-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jelly-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67F7DB4D6F950B743A542F63BF0D8E6E /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C2E90E2ECABE5CA019058B253CBAA01 /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D4F53653563EBD630B68523AF100BFA /* Pods-whack_a_jellyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jellyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93DF7BE2A051085F6B38AFC82BF12C07 /* Pods-whack_a_jellyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jellyTests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F21F830BAAC21EC22B6786C66729D65 /* Each.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Each.modulemap; sourceTree = "<group>"; };
-		A5083EEC96326A3E2D17BDF43F7FD2E8 /* Pods-whack_a_jellyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jellyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A5B98D4DDB3F8F6D4C329F442E30CE87 /* Pods-whack_a_jelly-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jelly-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A876C1B62377D4BFACC0AF25FFA4C5C8 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h"; sourceTree = "<group>"; };
-		AE2689B215951782275116196E39A817 /* Pods-whack_a_jelly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whack_a_jelly-umbrella.h"; sourceTree = "<group>"; };
-		AF54C7D848CD389BA922B1CA9A45A418 /* Pods-whack_a_jelly-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-Info.plist"; sourceTree = "<group>"; };
-		AFB7B5ABF335BE47D0191ECCDC42A559 /* Pods-whack_a_jelly-whack_a_jellyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-whack_a_jellyUITests-Info.plist"; sourceTree = "<group>"; };
-		B329DCA9FF6F9129359EAD214C48A0D8 /* Pods-whack_a_jellyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jellyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B3B591074A8897B91EC9364B8530DCB7 /* Pods-whack_a_jelly-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-whack_a_jelly-frameworks.sh"; sourceTree = "<group>"; };
-		C111E583CB414C619F01360EF594896F /* Each-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Each-umbrella.h"; sourceTree = "<group>"; };
-		CDC5F01CE9E99733243F74D6784E46A4 /* Pods-whack_a_jellyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whack_a_jellyTests-umbrella.h"; sourceTree = "<group>"; };
-		DEA81243D4244605DA908223C0DB5B37 /* Pods-whack_a_jelly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-whack_a_jelly.modulemap"; sourceTree = "<group>"; };
-		E47F057B285D965F019F9A350DE4FE7B /* Pods-whack_a_jelly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jelly-dummy.m"; sourceTree = "<group>"; };
-		EBA94E38F562590F82EBD602D8DB655C /* Each-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Each-prefix.pch"; sourceTree = "<group>"; };
-		EBF7D71EBD3EC027CB24F560B90F67F0 /* Each-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Each-dummy.m"; sourceTree = "<group>"; };
-		F9DD9096109DAE4F22BFE8746757AF3B /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m"; sourceTree = "<group>"; };
+		A4A7955EBB093EBA22C4ED7EF671C432 /* Each.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Each.xcconfig; sourceTree = "<group>"; };
+		B5C2D37EB7A6FE983EA072459EE0DC7F /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD4AD0127C733595779041A5997EF9F5 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C5EE6D414BEA9BF5762DBCEC770D9DAA /* Pods-whack_a_jellyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jellyTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5FA35016A39A1777F3B4C091BDDDC6A /* Pods-whack_a_jelly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-whack_a_jelly.modulemap"; sourceTree = "<group>"; };
+		D4163C3ED9B98DEA64F6D357C31D29F2 /* Pods-whack_a_jelly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whack_a_jelly.release.xcconfig"; sourceTree = "<group>"; };
+		E03E972F2B82D6F362F277D9257CC401 /* Pods-whack_a_jelly-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whack_a_jelly-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2F8FD196914C1F9908BF624F289A53C /* Pods-whack_a_jelly-whack_a_jellyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-whack_a_jelly-whack_a_jellyUITests.modulemap"; sourceTree = "<group>"; };
+		F37D0796FF08A845EA3F1DA5E3610D03 /* Each.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Each.swift; path = Sources/Each.swift; sourceTree = "<group>"; };
+		FB391B42BC8B78AB12FA2E7130DCEC68 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D4577188C332217EA891D41E9530823 /* Frameworks */ = {
+		03F0EA25FB8A0C9FD6AC70E2AD788926 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5008E551E2BDAFB623E2B752D8C4A9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21FCE80758CE6D8937AE7F54C13D1879 /* Frameworks */ = {
+		1EAB7883F9A9E1CDA5315965148B5771 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2303209B7FA1F2B76A95F5FC7B7AF40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25BAB7055400F3487551B7C645B9684D /* Frameworks */ = {
+		481676D7B696332C3AE9E00735527A82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435DFD893CE3EF42359EF34475E08C2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9CC116B5F4FCEF6797D1C6844165D16 /* Frameworks */ = {
+		EC45F75A7CB41663D13C6BF4106DD3D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3870DA0F8CA02D608B62E6A2EBB870B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26DCDE78351344500B4EB809054748F6 /* Pods */ = {
+		192104E9B06443F7F028EEB4970BF758 /* Pods-whack_a_jelly */ = {
 			isa = PBXGroup;
 			children = (
-				EB1C3EB0B0981CA4506DB50B53669512 /* Each */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9807066DA06B14FC1CFA206B54781CFA /* Pods-whack_a_jelly */ = {
-			isa = PBXGroup;
-			children = (
-				DEA81243D4244605DA908223C0DB5B37 /* Pods-whack_a_jelly.modulemap */,
-				A5B98D4DDB3F8F6D4C329F442E30CE87 /* Pods-whack_a_jelly-acknowledgements.markdown */,
-				348F8F8FC0283E9C9FADD729B8F63623 /* Pods-whack_a_jelly-acknowledgements.plist */,
-				E47F057B285D965F019F9A350DE4FE7B /* Pods-whack_a_jelly-dummy.m */,
-				B3B591074A8897B91EC9364B8530DCB7 /* Pods-whack_a_jelly-frameworks.sh */,
-				AF54C7D848CD389BA922B1CA9A45A418 /* Pods-whack_a_jelly-Info.plist */,
-				AE2689B215951782275116196E39A817 /* Pods-whack_a_jelly-umbrella.h */,
-				864BA492AB0631EE9A441AD947E18C91 /* Pods-whack_a_jelly.debug.xcconfig */,
-				650100BBC480E5D2FCCA32E3A1954087 /* Pods-whack_a_jelly.release.xcconfig */,
+				C5FA35016A39A1777F3B4C091BDDDC6A /* Pods-whack_a_jelly.modulemap */,
+				676E207A635D007B8F1C1F093B6A4630 /* Pods-whack_a_jelly-acknowledgements.markdown */,
+				E03E972F2B82D6F362F277D9257CC401 /* Pods-whack_a_jelly-acknowledgements.plist */,
+				11269671D891474913ABE025EEA6B23D /* Pods-whack_a_jelly-dummy.m */,
+				40ECF1BE0851551E788AC078B637EF66 /* Pods-whack_a_jelly-umbrella.h */,
+				3CA645F73768F83DB48912E02188CADB /* Pods-whack_a_jelly.debug.xcconfig */,
+				D4163C3ED9B98DEA64F6D357C31D29F2 /* Pods-whack_a_jelly.release.xcconfig */,
 			);
 			name = "Pods-whack_a_jelly";
 			path = "Target Support Files/Pods-whack_a_jelly";
 			sourceTree = "<group>";
 		};
-		AF09E7B3CEB95D33472DB775017B1704 /* Targets Support Files */ = {
+		26DCDE78351344500B4EB809054748F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9807066DA06B14FC1CFA206B54781CFA /* Pods-whack_a_jelly */,
-				D3309EE1DB3A03C5E8DD7E7943EC7B80 /* Pods-whack_a_jelly-whack_a_jellyUITests */,
-				E27A12F00815E4E2665E8227882F2F23 /* Pods-whack_a_jellyTests */,
+				7EF35B0AA356D9C2B1919E37BCD2290A /* Each */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CA9B5468982231CF26CEC592ACE024E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				192104E9B06443F7F028EEB4970BF758 /* Pods-whack_a_jelly */,
+				5C256F6FA4CB52325383F1322F09FC49 /* Pods-whack_a_jelly-whack_a_jellyUITests */,
+				638DEACB69BEB51754F3CF7275D6B8E3 /* Pods-whack_a_jellyTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		5A8D9FDC5FD33E3237817BE70FDF7D35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				011C1C7392F87809A0EA99807C9DEAFE /* libEach.a */,
+				12441EDF942CAA673B888344A5C5DE14 /* libPods-whack_a_jelly.a */,
+				027BA28C03C2B1A3472E5C1AD3FCE814 /* libPods-whack_a_jelly-whack_a_jellyUITests.a */,
+				00FD76543E7D10E155CED9440E7B5B7E /* libPods-whack_a_jellyTests.a */,
 			);
-			name = iOS;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C256F6FA4CB52325383F1322F09FC49 /* Pods-whack_a_jelly-whack_a_jellyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8FD196914C1F9908BF624F289A53C /* Pods-whack_a_jelly-whack_a_jellyUITests.modulemap */,
+				B5C2D37EB7A6FE983EA072459EE0DC7F /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown */,
+				67F7DB4D6F950B743A542F63BF0D8E6E /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist */,
+				0AE73067FBF50D3461E47671C5C2403F /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */,
+				FB391B42BC8B78AB12FA2E7130DCEC68 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */,
+				6C2E90E2ECABE5CA019058B253CBAA01 /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */,
+				BD4AD0127C733595779041A5997EF9F5 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */,
+			);
+			name = "Pods-whack_a_jelly-whack_a_jellyUITests";
+			path = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests";
+			sourceTree = "<group>";
+		};
+		638DEACB69BEB51754F3CF7275D6B8E3 /* Pods-whack_a_jellyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A39CAACBB82145CD868C1917635FB48 /* Pods-whack_a_jellyTests-acknowledgements.markdown */,
+				66FDE1BF6EF439E63293122945414A6F /* Pods-whack_a_jellyTests-acknowledgements.plist */,
+				93DF7BE2A051085F6B38AFC82BF12C07 /* Pods-whack_a_jellyTests-dummy.m */,
+				8D4F53653563EBD630B68523AF100BFA /* Pods-whack_a_jellyTests.debug.xcconfig */,
+				C5EE6D414BEA9BF5762DBCEC770D9DAA /* Pods-whack_a_jellyTests.release.xcconfig */,
+			);
+			name = "Pods-whack_a_jellyTests";
+			path = "Target Support Files/Pods-whack_a_jellyTests";
+			sourceTree = "<group>";
+		};
+		7EF35B0AA356D9C2B1919E37BCD2290A /* Each */ = {
+			isa = PBXGroup;
+			children = (
+				F37D0796FF08A845EA3F1DA5E3610D03 /* Each.swift */,
+				9AAD83D28D91CEF7FC1B3C45687D0E33 /* Support Files */,
+			);
+			name = Each;
+			path = Each;
+			sourceTree = "<group>";
+		};
+		9AAD83D28D91CEF7FC1B3C45687D0E33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BC4C38BBF54F80966613352AD525C0D /* Each.modulemap */,
+				A4A7955EBB093EBA22C4ED7EF671C432 /* Each.xcconfig */,
+				02F5369EC20F8917644AA48EAB77B0D3 /* Each-dummy.m */,
+				4CC618C52AF6A256C429E22AC3B08DB5 /* Each-prefix.pch */,
+				20A1F5B2E7F64FEF477B288AF83045F7 /* Each-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Each";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				26DCDE78351344500B4EB809054748F6 /* Pods */,
-				EA91864A7D02680F990FC79C4DBA4EEE /* Products */,
-				AF09E7B3CEB95D33472DB775017B1704 /* Targets Support Files */,
+				5A8D9FDC5FD33E3237817BE70FDF7D35 /* Products */,
+				4CA9B5468982231CF26CEC592ACE024E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D3309EE1DB3A03C5E8DD7E7943EC7B80 /* Pods-whack_a_jelly-whack_a_jellyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2E3C2C9B30909A616EE396E7644B6E89 /* Pods-whack_a_jelly-whack_a_jellyUITests.modulemap */,
-				9C43E36EDBB08EAA767003E886100CED /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.markdown */,
-				0DC88E4AFA2B3B57372A2B17F4874CA5 /* Pods-whack_a_jelly-whack_a_jellyUITests-acknowledgements.plist */,
-				F9DD9096109DAE4F22BFE8746757AF3B /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m */,
-				69E82C5B9A6C00660FB26074D3744E3A /* Pods-whack_a_jelly-whack_a_jellyUITests-frameworks.sh */,
-				AFB7B5ABF335BE47D0191ECCDC42A559 /* Pods-whack_a_jelly-whack_a_jellyUITests-Info.plist */,
-				A876C1B62377D4BFACC0AF25FFA4C5C8 /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h */,
-				42F0DFB0A64737CF7497057A3E299DDB /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */,
-				432F0CCE4CE2E79E597F4EF691C8D7E3 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */,
-			);
-			name = "Pods-whack_a_jelly-whack_a_jellyUITests";
-			path = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests";
-			sourceTree = "<group>";
-		};
-		E27A12F00815E4E2665E8227882F2F23 /* Pods-whack_a_jellyTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C05ABB9E36947D6224E9A994816FC6D /* Pods-whack_a_jellyTests.modulemap */,
-				3DB8E3B356CDE2C436305BDF5DE3A9FA /* Pods-whack_a_jellyTests-acknowledgements.markdown */,
-				B329DCA9FF6F9129359EAD214C48A0D8 /* Pods-whack_a_jellyTests-acknowledgements.plist */,
-				9A279967321C7A6581AC781EB4B50682 /* Pods-whack_a_jellyTests-dummy.m */,
-				199C0FBEADF485E678091B728DB16F13 /* Pods-whack_a_jellyTests-Info.plist */,
-				CDC5F01CE9E99733243F74D6784E46A4 /* Pods-whack_a_jellyTests-umbrella.h */,
-				A5083EEC96326A3E2D17BDF43F7FD2E8 /* Pods-whack_a_jellyTests.debug.xcconfig */,
-				1E32334C586787A7AF1CD69CF578397A /* Pods-whack_a_jellyTests.release.xcconfig */,
-			);
-			name = "Pods-whack_a_jellyTests";
-			path = "Target Support Files/Pods-whack_a_jellyTests";
-			sourceTree = "<group>";
-		};
-		EA91864A7D02680F990FC79C4DBA4EEE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				011C1C7392F87809A0EA99807C9DEAFE /* Each.framework */,
-				12441EDF942CAA673B888344A5C5DE14 /* Pods_whack_a_jelly.framework */,
-				027BA28C03C2B1A3472E5C1AD3FCE814 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */,
-				00FD76543E7D10E155CED9440E7B5B7E /* Pods_whack_a_jellyTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EB1C3EB0B0981CA4506DB50B53669512 /* Each */ = {
-			isa = PBXGroup;
-			children = (
-				42F667A5C59E17B268A7B81E4F6825AB /* Each.swift */,
-				FD0E8BCB09987D0EC0B191684D05DCC3 /* Support Files */,
-			);
-			name = Each;
-			path = Each;
-			sourceTree = "<group>";
-		};
-		FD0E8BCB09987D0EC0B191684D05DCC3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9F21F830BAAC21EC22B6786C66729D65 /* Each.modulemap */,
-				0F9B2936D178DFDF14BCC0498CC444C0 /* Each.xcconfig */,
-				EBF7D71EBD3EC027CB24F560B90F67F0 /* Each-dummy.m */,
-				330AED234119F78312D5A1F6403EB4DB /* Each-Info.plist */,
-				EBA94E38F562590F82EBD602D8DB655C /* Each-prefix.pch */,
-				C111E583CB414C619F01360EF594896F /* Each-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Each";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		15D9AD3FB3C1D9AFA1E14CE87B75B064 /* Headers */ = {
+		4836BAA4F477EA3728B25BEA4D88BD7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E13E97087D3B3EDAE7B87E6960B7F5C /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h in Headers */,
+				4B0F770D505A95643D6DFC1AFBF3F9AB /* Each-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24CAA66BC4D9633A811DB6B15E476448 /* Headers */ = {
+		60CDF344B07499608581F902CDEAF6CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8A10DBDB3D83164B4FEFDA1D95C2EC /* Each-umbrella.h in Headers */,
+				C149FC48F0A72111BCDC4360260DAE4C /* Pods-whack_a_jelly-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7556615E39BC05C1841A0766090D8020 /* Headers */ = {
+		69725EA7C80B53E05414C9C278478DC5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968BBB0A25897493281C1CBA064B4DCC /* Pods-whack_a_jellyTests-umbrella.h in Headers */,
+				9FB91E8CF9F44F828132FB9319A903CD /* Pods-whack_a_jelly-whack_a_jellyUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68284981D5511BC46DC97309C3200FD /* Headers */ = {
+		9BE8EE8FE69D899508D93DFC82B95C47 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D40D509317EA2E58E29CFE7DA4A6D350 /* Pods-whack_a_jelly-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,50 +258,48 @@
 /* Begin PBXNativeTarget section */
 		0632904DEB91CAA58D852E75AAEDBA27 /* Pods-whack_a_jellyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5831032DFFCDDD5FE2C291DB39BC0C88 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jellyTests" */;
+			buildConfigurationList = 66EA24E24F1A2C9A9C424E3AB32F23C6 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jellyTests" */;
 			buildPhases = (
-				7556615E39BC05C1841A0766090D8020 /* Headers */,
-				41B4F6086F833AC05FD2E93E246E26C0 /* Sources */,
-				1D4577188C332217EA891D41E9530823 /* Frameworks */,
-				C911F40126A0EC35666F1B21CF6B7F4B /* Resources */,
+				9BE8EE8FE69D899508D93DFC82B95C47 /* Headers */,
+				8070F58CC18F072D823E7B2806181162 /* Sources */,
+				481676D7B696332C3AE9E00735527A82 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				105061BC85E541CCFCC88826D5A0C6EF /* PBXTargetDependency */,
+				129B76B6AB0F8B28A139D5174D80340F /* PBXTargetDependency */,
 			);
 			name = "Pods-whack_a_jellyTests";
 			productName = "Pods-whack_a_jellyTests";
-			productReference = 00FD76543E7D10E155CED9440E7B5B7E /* Pods_whack_a_jellyTests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 00FD76543E7D10E155CED9440E7B5B7E /* libPods-whack_a_jellyTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		9FD7E892863A295B353FFDE3A429A7F2 /* Pods-whack_a_jelly-whack_a_jellyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948873FB52CD7F8F680ED9A3FC64040F /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly-whack_a_jellyUITests" */;
+			buildConfigurationList = DD8060DE018AE4C565B0C8DA4CD938CA /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly-whack_a_jellyUITests" */;
 			buildPhases = (
-				15D9AD3FB3C1D9AFA1E14CE87B75B064 /* Headers */,
-				1BBDF55DEB8BFBCD30B1B7EBEA5FD492 /* Sources */,
-				25BAB7055400F3487551B7C645B9684D /* Frameworks */,
-				EB50B13F8A48DC0E37C90D6AC7C34A85 /* Resources */,
+				69725EA7C80B53E05414C9C278478DC5 /* Headers */,
+				5274781A52ACFC4E2FB9CE9FCA27E738 /* Sources */,
+				03F0EA25FB8A0C9FD6AC70E2AD788926 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0666670B0B507F9E2288C885181AE9D0 /* PBXTargetDependency */,
+				57BE8D48D1FC94AB2B1FAFF0BA10FB70 /* PBXTargetDependency */,
 			);
 			name = "Pods-whack_a_jelly-whack_a_jellyUITests";
 			productName = "Pods-whack_a_jelly-whack_a_jellyUITests";
-			productReference = 027BA28C03C2B1A3472E5C1AD3FCE814 /* Pods_whack_a_jelly_whack_a_jellyUITests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 027BA28C03C2B1A3472E5C1AD3FCE814 /* libPods-whack_a_jelly-whack_a_jellyUITests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		DD6DE87E23372BE22FADE859119E8487 /* Each */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55123E0FE32A7EB9506D3D2CE84BB2C7 /* Build configuration list for PBXNativeTarget "Each" */;
+			buildConfigurationList = 41E839E7FBF71BA77D26E022D1221C26 /* Build configuration list for PBXNativeTarget "Each" */;
 			buildPhases = (
-				24CAA66BC4D9633A811DB6B15E476448 /* Headers */,
-				8E3F89E40B2F4D328BAD102754EE6AFB /* Sources */,
-				A9CC116B5F4FCEF6797D1C6844165D16 /* Frameworks */,
-				D5C74391658C053A8E74FED627228B35 /* Resources */,
+				4836BAA4F477EA3728B25BEA4D88BD7F /* Headers */,
+				07741400615B1A35D64D23B15B8C9D2B /* Sources */,
+				1EAB7883F9A9E1CDA5315965148B5771 /* Frameworks */,
+				CC515830B8A0A696769F90FB6F4F805F /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -345,27 +307,26 @@
 			);
 			name = Each;
 			productName = Each;
-			productReference = 011C1C7392F87809A0EA99807C9DEAFE /* Each.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 011C1C7392F87809A0EA99807C9DEAFE /* libEach.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		F5557F2865A8D6685700A64AAB79D2B5 /* Pods-whack_a_jelly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89F78221C67D87281C61D92792EAC199 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly" */;
+			buildConfigurationList = CF8B271E44F450DE8600B10248C26BED /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly" */;
 			buildPhases = (
-				E68284981D5511BC46DC97309C3200FD /* Headers */,
-				0E79921FA744AFA6AF1F729585C266DA /* Sources */,
-				21FCE80758CE6D8937AE7F54C13D1879 /* Frameworks */,
-				129710E61AE7658E9B04B2C9D3E91736 /* Resources */,
+				60CDF344B07499608581F902CDEAF6CE /* Headers */,
+				E0965A2ECA51758D409C7C21D253F4D7 /* Sources */,
+				EC45F75A7CB41663D13C6BF4106DD3D7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F7A48B73F136347D068014875F9E993 /* PBXTargetDependency */,
+				FEB7EDD2D8A59F87CD8C71967C077DC8 /* PBXTargetDependency */,
 			);
 			name = "Pods-whack_a_jelly";
 			productName = "Pods-whack_a_jelly";
-			productReference = 12441EDF942CAA673B888344A5C5DE14 /* Pods_whack_a_jelly.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 12441EDF942CAA673B888344A5C5DE14 /* libPods-whack_a_jelly.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -385,7 +346,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EA91864A7D02680F990FC79C4DBA4EEE /* Products */;
+			productRefGroup = 5A8D9FDC5FD33E3237817BE70FDF7D35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -397,322 +358,184 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		129710E61AE7658E9B04B2C9D3E91736 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		CC515830B8A0A696769F90FB6F4F805F /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C911F40126A0EC35666F1B21CF6B7F4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Each/Each.modulemap",
+				"${PODS_ROOT}/Headers/Public/Each/Each-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Each-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Each/Each.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Each/Each-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
-		D5C74391658C053A8E74FED627228B35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB50B13F8A48DC0E37C90D6AC7C34A85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E79921FA744AFA6AF1F729585C266DA /* Sources */ = {
+		07741400615B1A35D64D23B15B8C9D2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA429C2202036A34473722BF0ACDFD85 /* Pods-whack_a_jelly-dummy.m in Sources */,
+				16D1D099E1F7F16EF4C0D189D80C0E61 /* Each-dummy.m in Sources */,
+				84E398F13626FB4C4D9583DEEB7A55C6 /* Each.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BBDF55DEB8BFBCD30B1B7EBEA5FD492 /* Sources */ = {
+		5274781A52ACFC4E2FB9CE9FCA27E738 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FBECEC33FA6B7A1BBB239E70658D105 /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m in Sources */,
+				F70DE6518D364E13BF96DE074D895FBD /* Pods-whack_a_jelly-whack_a_jellyUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41B4F6086F833AC05FD2E93E246E26C0 /* Sources */ = {
+		8070F58CC18F072D823E7B2806181162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEB210C9EBBD3D0A9D9FF25EDE7EB0E /* Pods-whack_a_jellyTests-dummy.m in Sources */,
+				913585D05D5279CCD5DCC9FEED02690F /* Pods-whack_a_jellyTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E3F89E40B2F4D328BAD102754EE6AFB /* Sources */ = {
+		E0965A2ECA51758D409C7C21D253F4D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5654857C8115F174EBF34EF2FF0630 /* Each-dummy.m in Sources */,
-				FCC61C7EBF1FCA0B2AB821A3B5E70142 /* Each.swift in Sources */,
+				426D1C65BDBF7EE60CEAC0CEF4DB0AE7 /* Pods-whack_a_jelly-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0666670B0B507F9E2288C885181AE9D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Each;
-			target = DD6DE87E23372BE22FADE859119E8487 /* Each */;
-			targetProxy = ADF5E0A6F42536AB4DCDDD7744A2F6B5 /* PBXContainerItemProxy */;
-		};
-		105061BC85E541CCFCC88826D5A0C6EF /* PBXTargetDependency */ = {
+		129B76B6AB0F8B28A139D5174D80340F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-whack_a_jelly";
 			target = F5557F2865A8D6685700A64AAB79D2B5 /* Pods-whack_a_jelly */;
-			targetProxy = 2D33750E4C64C56E3EBEFA2C4A52E98F /* PBXContainerItemProxy */;
+			targetProxy = 3FA4698906EF2BE44DA4B7EE9A817B5C /* PBXContainerItemProxy */;
 		};
-		9F7A48B73F136347D068014875F9E993 /* PBXTargetDependency */ = {
+		57BE8D48D1FC94AB2B1FAFF0BA10FB70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Each;
 			target = DD6DE87E23372BE22FADE859119E8487 /* Each */;
-			targetProxy = 54ECC2AB3FA28F701B4F26EAB5D24E7F /* PBXContainerItemProxy */;
+			targetProxy = AEAA716B52E4376469C8C40E7649BB8B /* PBXContainerItemProxy */;
+		};
+		FEB7EDD2D8A59F87CD8C71967C077DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Each;
+			target = DD6DE87E23372BE22FADE859119E8487 /* Each */;
+			targetProxy = 248B9F444C7CA1B0D88B07322F995BE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00CAAA614441EAFBA5A41876ECE163C9 /* Release */ = {
+		072810B79898283270A5C4A10635C31F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F9B2936D178DFDF14BCC0498CC444C0 /* Each.xcconfig */;
+			baseConfigurationReference = BD4AD0127C733595779041A5997EF9F5 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C7EEBDA90BE96412A350450409BE86F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A7955EBB093EBA22C4ED7EF671C432 /* Each.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Each/Each-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Each/Each-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Each/Each.modulemap";
+				MODULEMAP_FILE = Headers/Public/Each/Each.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = Each;
 				PRODUCT_NAME = Each;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		298D1E3FBB1BC17609BF6A4043FDC5B5 /* Debug */ = {
+		3A5B7021059A1B2FD443EF68F66F4B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5083EEC96326A3E2D17BDF43F7FD2E8 /* Pods-whack_a_jellyTests.debug.xcconfig */;
+			baseConfigurationReference = 8D4F53653563EBD630B68523AF100BFA /* Pods-whack_a_jellyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2E35C1029317AFB63A718D30B6A386BE /* Debug */ = {
+		5B5A2A8F9215964180835896636CB8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 864BA492AB0631EE9A441AD947E18C91 /* Pods-whack_a_jelly.debug.xcconfig */;
+			baseConfigurationReference = 6C2E90E2ECABE5CA019058B253CBAA01 /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2F49D3C0F5698B99CC5065D5B99B41A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42F0DFB0A64737CF7497057A3E299DDB /* Pods-whack_a_jelly-whack_a_jellyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3E01B772565CC04822A33616E3539668 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 432F0CCE4CE2E79E597F4EF691C8D7E3 /* Pods-whack_a_jelly-whack_a_jellyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly-whack_a_jellyUITests/Pods-whack_a_jelly-whack_a_jellyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		571F6B8CD70A063F36170C29E2E58757 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E32334C586787A7AF1CD69CF578397A /* Pods-whack_a_jellyTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jellyTests/Pods-whack_a_jellyTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -778,42 +601,50 @@
 			};
 			name = Debug;
 		};
-		9B8D29B3D9FDF41AC5DEF698ACF579D4 /* Release */ = {
+		6A505A6BA5DF5A9EC1391E4C25CFE374 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 650100BBC480E5D2FCCA32E3A1954087 /* Pods-whack_a_jelly.release.xcconfig */;
+			baseConfigurationReference = C5EE6D414BEA9BF5762DBCEC770D9DAA /* Pods-whack_a_jellyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE0F0AB4AC5934D7AFFB0C9A9B650D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4163C3ED9B98DEA64F6D357C31D29F2 /* Pods-whack_a_jelly.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -877,44 +708,67 @@
 			};
 			name = Release;
 		};
-		E432AEFAE1DA339895D7E9B4D2B491DB /* Debug */ = {
+		CAC748F9D2468A8D8A466139174EF71F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F9B2936D178DFDF14BCC0498CC444C0 /* Each.xcconfig */;
+			baseConfigurationReference = 3CA645F73768F83DB48912E02188CADB /* Pods-whack_a_jelly.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-whack_a_jelly/Pods-whack_a_jelly.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57E4A1FDB4A8D200AE7A5532CFAD9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A7955EBB093EBA22C4ED7EF671C432 /* Each.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Each/Each-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Each/Each-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Each/Each.modulemap";
+				MODULEMAP_FILE = Headers/Public/Each/Each.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = Each;
 				PRODUCT_NAME = Each;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41E839E7FBF71BA77D26E022D1221C26 /* Build configuration list for PBXNativeTarget "Each" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7EEBDA90BE96412A350450409BE86F /* Debug */,
+				F57E4A1FDB4A8D200AE7A5532CFAD9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -924,38 +778,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55123E0FE32A7EB9506D3D2CE84BB2C7 /* Build configuration list for PBXNativeTarget "Each" */ = {
+		66EA24E24F1A2C9A9C424E3AB32F23C6 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jellyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E432AEFAE1DA339895D7E9B4D2B491DB /* Debug */,
-				00CAAA614441EAFBA5A41876ECE163C9 /* Release */,
+				3A5B7021059A1B2FD443EF68F66F4B1E /* Debug */,
+				6A505A6BA5DF5A9EC1391E4C25CFE374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5831032DFFCDDD5FE2C291DB39BC0C88 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jellyTests" */ = {
+		CF8B271E44F450DE8600B10248C26BED /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				298D1E3FBB1BC17609BF6A4043FDC5B5 /* Debug */,
-				571F6B8CD70A063F36170C29E2E58757 /* Release */,
+				CAC748F9D2468A8D8A466139174EF71F /* Debug */,
+				7EE0F0AB4AC5934D7AFFB0C9A9B650D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89F78221C67D87281C61D92792EAC199 /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly" */ = {
+		DD8060DE018AE4C565B0C8DA4CD938CA /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly-whack_a_jellyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E35C1029317AFB63A718D30B6A386BE /* Debug */,
-				9B8D29B3D9FDF41AC5DEF698ACF579D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		948873FB52CD7F8F680ED9A3FC64040F /* Build configuration list for PBXNativeTarget "Pods-whack_a_jelly-whack_a_jellyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F49D3C0F5698B99CC5065D5B99B41A1 /* Debug */,
-				3E01B772565CC04822A33616E3539668 /* Release */,
+				5B5A2A8F9215964180835896636CB8A7 /* Debug */,
+				072810B79898283270A5C4A10635C31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
