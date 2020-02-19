@@ -39,6 +39,7 @@
                                     <constraint firstAttribute="height" constant="55" id="1IA-1E-iEe"/>
                                     <constraint firstAttribute="width" constant="85" id="QXd-n1-w3f"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -95,8 +96,9 @@
                                     <constraint firstAttribute="width" constant="85" id="7Mb-Pt-vld"/>
                                     <constraint firstAttribute="height" constant="55" id="uN7-oG-Saj"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.32687896490000001" green="0.62360471490000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUH-Cd-YRg"/>
