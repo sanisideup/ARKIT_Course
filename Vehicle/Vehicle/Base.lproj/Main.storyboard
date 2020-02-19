@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="floor_is_lava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vehicle_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,11 +21,27 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mS-Uo-Z8n">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-zZ-5dL">
+                                <rect key="frame" x="20" y="607" width="70" height="40"/>
+                                <color key="backgroundColor" red="0.32687896490000001" green="0.62360471490000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="dEo-Dk-cJf"/>
+                                    <constraint firstAttribute="height" constant="40" id="eby-IK-cDs"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5C-mX-X5H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5mS-Uo-Z8n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0PC-t0-gd4"/>
                             <constraint firstItem="5mS-Uo-Z8n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="583-ie-7Ew"/>
+                            <constraint firstItem="GwF-zZ-5dL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SqL-Na-5sO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GwF-zZ-5dL" secondAttribute="bottom" constant="20" id="TdD-2q-E19"/>
                             <constraint firstItem="5mS-Uo-Z8n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cKi-qv-FcR"/>
                             <constraint firstItem="5mS-Uo-Z8n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="gy7-nq-HNM"/>
                         </constraints>
