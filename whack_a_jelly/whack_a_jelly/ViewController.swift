@@ -78,11 +78,11 @@ class ViewController: UIViewController {
             if results.animationKeys.isEmpty {
                 SCNTransaction.begin()              // begins tracking the a transaction
                 self.animateNode(node: results)
+                self.restoreTimer()
+                self.incScore()
                 SCNTransaction.completionBlock = {  // once animation between this line and .begin() completes define lines to be executed
                     results.removeFromParentNode()
                     self.addNode()
-                    self.incScore()
-                    self.restoreTimer()
                 }
                 SCNTransaction.commit()             // execute lines defined within the completionBlock
             }
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
 //        spin.autoreverses = true // undo animation back to original position
         node.addAnimation(spin, forKey: "position") // triger annimation
         
-        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 1)) // fade out
+        node.runAction(SCNAction.fadeOpacity(to: 0, duration: 0.5)) // fade out
 
     }
     
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
     }
     
     func killJelly() {
-        self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate nodes and execute below lines
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in // enumerate child nodes and execute below lines
             self.fadeNode(node: node, duration: 1)
         }
     }
